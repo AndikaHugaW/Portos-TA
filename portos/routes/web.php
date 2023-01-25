@@ -25,3 +25,12 @@ Route::get('/register', function () {
 Route::get('/home', function () {
     return view('home');
 });
+Route::get('/explore', function () {
+    return view('explore');
+});
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/profile', function () {
+    return view('profile');
+});
