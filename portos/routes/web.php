@@ -34,3 +34,9 @@ Route::get('/about', function () {
 Route::get('/profile', function () {
     return view('profile');
 });
+Route::get('/editprofile', function () {
+    return view('editprofile');
+});
+Route::get('/detailporto', function () {
+    return view('detailporto');
+});
