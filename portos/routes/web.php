@@ -28,9 +28,6 @@ Route::get('/home', function () {
 Route::get('/explore', function () {
     return view('explore');
 });
-Route::get('/about', function () {
-    return view('about');
-});
 Route::get('/profile', function () {
     return view('profile');
 });
@@ -39,4 +36,7 @@ Route::get('/editprofile', function () {
 });
 Route::get('/detailporto', function () {
     return view('detailporto');
+});
+Route::get('/upload', function () {
+    return view('upload');
 });

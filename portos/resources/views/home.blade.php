@@ -24,9 +24,6 @@
               <a class="nav-link fw-semibold" style="font-size: 20px; color: #ADADAD" href="#">Explore</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semibold" style="font-size: 20px; color: #ADADAD" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link fw-semibold" style="font-size: 20px; color: #ADADAD" href="#">Profile</a>
               </li>
           

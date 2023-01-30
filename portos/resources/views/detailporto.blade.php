@@ -23,8 +23,8 @@
             <p class="fw-semibold" style="margin-top: 10px; margin-left: 120px; font-family: Poppins;">Go Youn Jung</p>
 
         <div class="d-grid gap-2 d-md-block" style="margin-left: 1100px; margin-top: -58px;">
-            <button class="btn rounded fw-semibold" style="font-size: 15px; background-color: #fff;" type="button">Simpan</button>
-            <button class="btn rounded fw-semibold" style="font-size: 15px; background-color: #FFBE55; margin-left: 10px;" type="button">Suka</button>
+            <button class="btn rounded fw-bold" style="font-size: 15px; font-family: 'Poppins'; background-color: #fff; border-radius: 50px;" type="button">Simpan</button>
+            <button class="btn rounded fw-bold text-white" style="font-size: 15px; font-family: 'Poppins'; background-color: #FFBE55; margin-left: 10px; border-radius: 50px;" type="button">Suka</button>
 
         </div>    
 
@@ -33,11 +33,11 @@
     <div class="justify-item-center position-absolute top-50 start-50 translate-middle" style="margin-top: 300px;">
       <img src="/restaurant-app-profile.png" style="width: 1300px; height: 705px; border-radius: 30px;" alt="">
       <p class="fw-semibold" style="width: 500px; font-size: 18px; margin-top: 80px; font-family: 'Poppins';">Hi Guys, This is my Exploration for Food Delivery  Landing Page  How  about you? Let me Know your Awesome Feedback Dont forget to like it</p>
-      <div class="ms-auto vr" style="margin-top: 30px;">
-        <a href="" class="text-decoration-none">Twitter</a>
-        <a href="" class="text-decoration-none">Instagram</a>
-        <a href="" class="text-decoration-none">Facebook</a>
-        <a href="" class="text-decoration-none">Gmail</a>
+      <p class="fw-medium" style="font-family: Poppins;">Contact with Us<a class="ms-2 text-decoration-none fw-semibold" href="" style="font-family: Poppins; color:#FFBE55">Goyounjung@gmail.com</a></p>
+      <div class="ms-auto" style="margin-top: 10px;">
+        <a href="" class="text-decoration-none fw-semibold" style="font-family: Poppins; color:#FFBE55">Twitter</a>
+        <a href="" class="text-decoration-none fw-semibold" style="font-family: Poppins; margin-left: 10px; color:#FFBE55">Instagram</a>
+        <a href="" class="text-decoration-none fw-semibold" style="font-family: Poppins; margin-left: 10px; color:#FFBE55">Facebook</a>
       </div>
     </div>
    
