@@ -31,7 +31,7 @@
           <div class="ms-auto">
             <img class="px-2" src="/like.svg" alt="like">
             <img class="px-2" src="/notification.svg" alt="notification">
-            <img class="px-2" src="/iconprofile.svg" alt="profile">  
+            <img class="rounded-circle" src="/profile-3.jpg" alt="profile" style="width: 40px;">  
             <img class="px-2" src="/btnupload.svg" alt="btnupload">
             </div> 
         </div>
@@ -146,7 +146,7 @@
 
     <div class="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" style="margin-left: -70px; margin-top: 60px;">
+      <div class="d-flex align-items-center justify-content-center row row-cols-1 row-cols-sm-2 row-cols-md-4" style="margin-left: -70px; margin-top: 60px;">
         <img src="/btn-jurusan-produksi.svg" style="width: 240px; height: 240px;" alt="Produksi-Grafika">
         <img src="/btn-jurusan-desain-grafika.svg" style="width: 240px; height: 240px;" alt="Desain-Grafika">
         <img src="/btn-jurusan-animasi.svg" style="width: 240px; height: 240px;" alt="Animasi">
