@@ -7,35 +7,9 @@
     <title>PORTOS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
-  <body class="" style="background-color: #F6F7F9;">
+  <body class="" style="width: 100%; background-color: #F6F7F9;">
     
-    <nav class="navbar navbar-expand-lg navbar-light d-flex mx-5 my-2">
-        <h1 class="navbar-brand fw-bold mt-2" style="font-size: 30px; color: #FFBE55" href="#">PORTOS</h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-
-            <li class="nav-item active" aria-current="page">
-              <a class="nav-link fw-bold" style="font-size: 20px; color: #232F58" href="#">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-semibold" style="font-size: 20px; color: #ADADAD" href="#">Explore</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link fw-semibold" style="font-size: 20px; color: #ADADAD" href="#">Profile</a>
-              </li>
-          
-          </ul>
-          <div class="ms-auto">
-            <img class="px-2" src="/like.svg" alt="like">
-            <img class="px-2" src="/notification.svg" alt="notification">
-            <img class="rounded-circle" src="/profile-3.jpg" alt="profile" style="width: 40px;">  
-            <img class="px-2" src="/btnupload.svg" alt="btnupload">
-            </div> 
-        </div>
-      </nav>
+    <x-navbar/>
   
       <div class="container text-center">
         <div class="row align-items-center pt-5" style="margin-top: 100px;">
@@ -56,10 +30,10 @@
 
       </div>
       
-      <div class="tengah" style="margin-top: 260px; background-color: #FFBE55">
-        <div class="p-5">
+      <div class="" style="width: 100%; margin-top: 280px; padding-left: 100px; background-color: #FFBE55">
+        <div class="">
           <div class="row">
-            <div class="row align-items-center mt-2 pt-2 mx-5">
+            <div class="row align-items-center mt-2 pt-2">
               <div class="col" style="margin-left: -50px;">
                 <h2 class="fw-bold text-light" style="font-size: 40px;">Apa itu Portos</h2>
                 <p class="fw-semibold text-light" style="font-size: 16px;">

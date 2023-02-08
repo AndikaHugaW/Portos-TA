@@ -17,59 +17,10 @@
   </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light d-flex mx-5 my-2">
-        <h1 class="navbar-brand fw-bold mt-2" style="font-size: 30px; color: #FFBE55" href="#">PORTOS</h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-
-            <li class="nav-item active" aria-current="page">
-              <a class="nav-link fw-bold" style="font-size: 20px; color: #232F58" href="#">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fw-semibold" style="font-size: 20px; color: #ADADAD" href="#">Explore</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link fw-semibold" style="font-size: 20px; color: #ADADAD" href="#">Profile</a>
-              </li>
-
-                <!-- Favorite -->
-            <div class="mt-2" style="margin-left: 726px;">
-              <button class="btn icon" style="background-image: url(icon-favorite.svg); width: 45px; height: 45px;"></button>
-            </div>
-
-              <!-- Notification -->
-            <div class="mt-2" style="margin-left: 20px;">
-              <button class="btn icon" style="background-image: url(icon-notification.svg); width: 45px; height: 45px;"></button>
-            </div>
-            
-            <!-- User -->
-            <div class="dropdown mt-2" style="margin-left: 20px;">
-              <a class="text-reset dropdown-toggle d-flex align-items-center hidden-arrow" href="#"
-                id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                <img src="/profile-3.jpg" class="rounded-circle" height="40" alt=""
-                  loading="lazy" />
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">My profile</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-              </ul>
-            </div>
-
-            <!-- Button Upload -->
-            <div class="" style="margin-left: 20px;">
-                <button class="btn mt-2 fw-bold rounded-4" style="font-family: poppins; color: #fff; background-color:#FFBE55; width: 120px; height: 40px;">Upload</button>
-            </div>
-          
-          </ul>
-        </div>
-      </nav>
+    <x-navbar/>
 
       <!-- Background Edit Profile-->
-      <div class="d-flex " style="margin-top: 50px; margin-left: 235px;">
+      <div class="d-flex " style="margin-top: 55px; margin-left: 235px;">
         <div class="your-div">
           <img src="/background-edit-profile.jpg" alt="" style="width: 1240px; height: 365px; border-radius: 60px 0 0 0;">
         </div>
@@ -81,6 +32,12 @@
         <div class="" style="margin-top: 380px; margin-left: 30px;">
             <h4 class="fw-bold" style="font-family: poppins; font-size: 24px;">Edit Profile</h4>
             <p class="fw-normal" style="font-family: poppins; font-size: 12px; margin-top: -5px;">Update your photo and personal details</p>
+        </div>
+
+        <!-- Button Save dan Cancel -->
+        <div class="text-end" style="margin-left: 535px; margin-top: 380px;">
+          <button class="btn mt-2 fw-bold rounded-4" style="font-family: poppins; color: #fff; background-color:#FFBE55; width: 120px; height: 40px;">Upload</button>
+          <button class="btn mt-2 fw-bold rounded-4 border border-3" style="font-family: poppins; color: black; background-color:#fff; width: 120px; height: 40px; margin-left: 10px;">Cancel</button>
         </div>
 
       </div>
@@ -125,20 +82,49 @@
       </div>
 
       <!-- Tanggal Lahir-->
-      <div class="d-flex  justify-content-center" style="margin-top: 50px;">
-        <div class="col-auto" style="margin-left: -500px;">
-          <h4 class="col-form-label fw-semibold" style="font-family: poppins; font-size: 20px; margin-top: -10px;">Tanggal Lahir</h4>
+      <div class="d-flex  justify-content-center" style="margin-top: 50px; margin-left: -510px;">
+        <div class="col-auto" style="">
+          <h4 class="col-form-label fw-semibold mt-1" style="font-family: poppins; font-size: 18px; margin-top: -10px;">Tanggal Lahir</h4>
         </div>
 
         <!-- Hari-->
-        <div class="btn-group" style="margin-left: 30px;">
+        <div class="btn-group" style="margin-left: 45px;">
           <button class="btn btn-secondary dropdown-toggle text-dark" type="button" style="background-color: #fff;" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
             Hari
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">1</a></li>
+            <li><a class="dropdown-item" href="#">2</a></li>
+            <li><a class="dropdown-item" href="#">3</a></li>
+            <li><a class="dropdown-item" href="#">4</a></li>
+            <li><a class="dropdown-item" href="#">5</a></li>
+            <li><a class="dropdown-item" href="#">6</a></li>
+            <li><a class="dropdown-item" href="#">7</a></li>
+            <li><a class="dropdown-item" href="#">8</a></li>
+            <li><a class="dropdown-item" href="#">9</a></li>
+            <li><a class="dropdown-item" href="#">10</a></li>
+            <li><a class="dropdown-item" href="#">11</a></li>
+            <li><a class="dropdown-item" href="#">11</a></li>
+            <li><a class="dropdown-item" href="#">12</a></li>
+            <li><a class="dropdown-item" href="#">13</a></li>
+            <li><a class="dropdown-item" href="#">14</a></li>
+            <li><a class="dropdown-item" href="#">15</a></li>
+            <li><a class="dropdown-item" href="#">16</a></li>
+            <li><a class="dropdown-item" href="#">17</a></li>
+            <li><a class="dropdown-item" href="#">18</a></li>
+            <li><a class="dropdown-item" href="#">19</a></li>
+            <li><a class="dropdown-item" href="#">20</a></li>
+            <li><a class="dropdown-item" href="#">21</a></li>
+            <li><a class="dropdown-item" href="#">22</a></li>
+            <li><a class="dropdown-item" href="#">23</a></li>
+            <li><a class="dropdown-item" href="#">24</a></li>
+            <li><a class="dropdown-item" href="#">25</a></li>
+            <li><a class="dropdown-item" href="#">26</a></li>
+            <li><a class="dropdown-item" href="#">27</a></li>
+            <li><a class="dropdown-item" href="#">28</a></li>
+            <li><a class="dropdown-item" href="#">29</a></li>
+            <li><a class="dropdown-item" href="#">30</a></li>
+            <li><a class="dropdown-item" href="#">31</a></li>
           </ul>
         </div>
 
@@ -148,9 +134,18 @@
             Bulan
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
+            <li><a class="dropdown-item" href="#">Januari</a></li>
+            <li><a class="dropdown-item" href="#">Februari</a></li>
+            <li><a class="dropdown-item" href="#">Maret</a></li>
+            <li><a class="dropdown-item" href="#">April</a></li>
+            <li><a class="dropdown-item" href="#">Mei</a></li>
+            <li><a class="dropdown-item" href="#">Juni</a></li>
+            <li><a class="dropdown-item" href="#">Juli</a></li>
+            <li><a class="dropdown-item" href="#">Agustus</a></li>
+            <li><a class="dropdown-item" href="#">September</a></li>
+            <li><a class="dropdown-item" href="#">Oktober</a></li>
+            <li><a class="dropdown-item" href="#">November</a></li>
+            <li><a class="dropdown-item" href="#">Desember</a></li>
           </ul>
         </div>
 
@@ -169,18 +164,13 @@
 
       <!-- Bio -->
       <div class="d-flex  justify-content-center" style="margin-top: 50px;">
-        <div class="col-auto" style="margin-left: 5px;">
+        <div class="col-auto" style="margin-left: -10px;">
           <label class="col-form-label fw-semibold" style="font-family: poppins; font-size: 20px;">Bio</label>
         </div>
         <div class="col-auto" style="margin-left: 135px;">
-          <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" style="width: 800px; height: 40px;">
+          <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" style="width: 800px; height: 200px;">
         </div>
-      </div>
-
-
-
-
-
+      </div>  
 
           <!-- Footer -->
   <footer class="text-black" style="margin-top: 150px; background-color: #fff">

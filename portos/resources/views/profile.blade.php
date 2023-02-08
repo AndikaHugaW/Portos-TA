@@ -7,35 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body class="main-content" style="background-color: #F6F7F9">
-
-    <nav class="navbar navbar-expand-lg navbar-light d-flex mx-5 my-2">
-      <h1 class="navbar-brand fw-bold mt-2" style="font-size: 30px; color: #FFBE55" href="#">PORTOS</h1>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-
-          <li class="nav-item">
-            <a class="nav-link fw-semibold" style="font-size: 20px; color: #ADADAD" href="#">Beranda</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-semibold" style="font-size: 20px; color: #ADADAD" href="#">Explore</a>
-          </li>
-          <li class="nav-item" active aria-current="page">
-              <a class="nav-link fw-bold" style="font-size: 20px; color: #232F58" href="#">Profile</a>
-            </li>
-        
-        </ul>
-        <div class="ms-auto">
-          <img class="px-2" src="/like.svg" alt="like">
-          <img class="px-2" src="/notification.svg" alt="notification">
-          <img class="px-2" src="/iconprofile.svg" alt="profile">  
-          <img class="px-2" src="/btnupload.svg" alt="btnupload">
-          </div> 
-      </div>
-    </nav>
-
+<x-navbar/>
     <div class="container align-it d-flex" style="margin-top: -40px;">
       <img src="/background-profile.svg" style="margin-left: -109px; max-width: 1516px; height: 400px;" alt="background-explore">
 
@@ -50,11 +22,8 @@
           <button type="button" class="btn rounded-pill fw-semibold" style="background-color: #FFBE55; color: #fff; font-size: 22px;">
             <span>
               <img src="/icon-folder.svg" alt="">Project Saya
-
             </span>
-
           </button>
-
         </div>
 
         <!--Koleksi -->
@@ -128,9 +97,9 @@
 
         <div class="container">
           <div class="row row-cols-auto justify-content-center">  
-            <button class="btn rounded-pill fw-semibold text-white" style="background-color: #FFBE55; width: 70px; height: 30px; font-size: 8px;">Edit Profile</button>
+            <button class="btn rounded-pill fw-semibold text-white" onclick="location.href='http://127.0.0.1:8000/editprofile'" style="background-color: #FFBE55; width: 70px; height: 30px; font-size: 8px;">Edit Profile</button>
             <img src="/icon-inbox.svg" style="width: 50px; height: 50px; margin-top: -10px; margin-left: 5px;" alt="Button-Inbox">
-            <img src="/icon-logout.svg" style="width: 50px; height: 50px; margin-top: -10px; margin-left: -5px;" alt="Button-Logout">
+            <img src="/icon-logout.svg" onclick="location.href='http://127.0.0.1:8000/login'" style="width: 50px; height: 50px; margin-top: -10px; margin-left: -5px;" alt="Button-Logout">
           </div>
         </div>  
 

@@ -29,12 +29,12 @@
       </div>
 
       <div class="mt-5" style="margin-left: 380px;">
-        <img src="/btnlogin.svg" alt="btnlogin">
+        <button class="btn rounded-5 fw-bold text-white" onclick="location.href='http://127.0.0.1:8000'" style="background-color:#FFBE55; width: 440px; height: 55px;">Masuk</button>
       </div>
 
       <div class="col mt-3 d-flex justify-content-center" style="margin-left: 200px;">
         <p class="text-start fw-semibold">Tidak punya akun?</p>
-        <p class="fw-bold alert-link" style="margin-left: 15px; color: #FFBE55;">Daftar disini</p>
+        <p class="fw-bold alert-link" onclick="location.href='http://127.0.0.1:8000/register'"  style="margin-left: 15px; color: #FFBE55;">Daftar disini</p>
       </div>
       
     </div>  
