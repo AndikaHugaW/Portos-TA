@@ -40,6 +40,15 @@ Route::get('/detailporto', function () {
 Route::get('/upload', function () {
     return view('upload');
 });
+Route::get('/notification', function () {
+    return view('notification');
+});
+
+Route::get('/loginadmin', function () {
+    return view('loginadmin');
+});
+Route::get('/registeradmin', function () {
+    return view('registeradmin');
+});
 
 Route::get('/home', 'login@index');
-

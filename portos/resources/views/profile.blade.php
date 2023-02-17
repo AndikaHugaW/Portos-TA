@@ -7,7 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body class="main-content" style="background-color: #F6F7F9">
-<x-navbar/>
+
+  <x-navbar/>
+
     <div class="container align-it d-flex" style="margin-top: -40px;">
       <img src="/background-profile.svg" style="margin-left: -109px; max-width: 1516px; height: 400px;" alt="background-explore">
 
@@ -123,94 +125,7 @@
       
     </div>
 
-  <!-- Footer -->
-  <footer class="text-black" style="margin-top: 280px; background-color: #fff">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-6 col-md-4 mb-4 mb-md-0 " style="margin-left: -90px;">
-          <h5 class="text-uppercase fw-bold">PORTOS</h5>
-          <p class="fw-semibold" style="color: #ADADAD;">Our vision is to provide convenience and help increase your sales business.</p>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
-          <h5 class="fw-bold">Tentang</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <p class="fw-semibold text-secondary">How it works</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Featured</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Partnership Business</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Relation</p>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
-          <h5 class="fw-bold">Komunitas</h5>
-
-          <ul class="list-unstyled mt-2">
-            <li>
-              <p class="fw-semibold text-secondary">Events</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Blog</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Podcast</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Invite a friend</p>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
-          <h5 class="fw-bold">Sosial Media</h5>
-
-          <ul class="list-unstyled mt-2">
-            <li>
-              <p class="fw-semibold text-secondary">Discord</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Instagram</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Twitter</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">facebook</p>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-start p-3 mx-3 fw-bold" style="background-color: #ffffff;">
-      ©2022 PORTOS. All rights reserved
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
+  <x-footer/>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
