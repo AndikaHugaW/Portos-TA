@@ -40,7 +40,7 @@
 
           <div class="col mt-3 d-flex justify-content-start" style="margin-left: -30px;">
             <p class="text-start fw-semibold" style="font-size: 12px;">Tidak punya akun?</p>
-            <p class="fw-bold alert-link" onclick="location.href='http://127.0.0.1:8000/registeradmin'"  style="font-size: 12px; margin-left: 5px; color: #0C73EB;">Daftar disini</p>
+            <a href="#" class="fw-bold alert-link text-decoration-none" onclick="location.href='http://127.0.0.1:8000/registeradmin'"  style="font-size: 12px; margin-left: 5px; color: #0C73EB;">Daftar disini</a>
           </div>
 
           <!-- Button Login Google-->

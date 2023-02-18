@@ -5,7 +5,7 @@
 
 <div>
 <nav class="navbar navbar-expand-lg navbar-light d-flex mx-5 my-2">
-        <h1 class="navbar-brand fw-bold mt-2" style="font-size: 30px; color: #FFBE55">PORTOS</h1>
+        <h1 class="navbar-brand fw-bold mt-2" style="font-size: 30px; color: #FFBE55" onclick="location.href='http://127.0.0.1:8000'" >PORTOS</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

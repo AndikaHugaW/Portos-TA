@@ -15,9 +15,9 @@
 
     <title>ADMIN</title>
   </head>
-  <body class="" style="background-color: #4285F4">
+  <body class="bg-image" style="background-image: image('register-admin.jpg');">
 
-    <section class="d-flex justify-content-center" style="margin-top: 80px; ">
+    <section class="d-flex justify-content-center" style="margin-top: 60px; ">
       <div class="card rounded" style="width: 80%; border-radius: 100px;">
 
         <!-- Nama Website -->
@@ -25,24 +25,27 @@
           <p class="p-sm-3 fw-bold text-primary" style="font-family: poppins;">PORTOS</p>
         </div>
 
-        <div class="justify-content-start" style="margin-left: 35px;">
+        <div class="justify-content-start" style="margin-left: 115px;">
           <p class="fw-semibold" style="font-size: 12px; font-family: poppins;">Welcome to PORTOS Website</p>
           <p class="fw-bold" style="font-size: 20px; font-family: poppins; margin-top: -15px;">Create new Account</p>
           <p class="fw-normal" style="font-size: 12px; font-family: poppins; margin-top: -15px;">Please enter your details</p>
         </div>
 
-        <div class="col text-start p-3" style="margin-left: 120px;">
+        <div class="col text-start p-3" style="margin-left: 200px;">
           
-          <div class="" style="">
-            <!-- Form First Name-->
-            <div class="d-flex p-2 justify-content-start form-outline mb-2" style="margin-left: -110px;">
-              <input type="text" placeholder="First Name" id="inputemail5" class="form-control p-2" style="width: 350px; font-size: 12px; font-family: poppins;">
+          <div class="container " style="">
+           <div class="row row-cols-auto">
+             <!-- Form First Name-->
+             <div class="d-flex col p-2  justify-content-start form-outline mb-2" style="margin-left: -110px;">
+              <input type="text" placeholder="First Name" id="inputemail5" class="form-control p-2" style="width: 150px; font-size: 12px; font-family: poppins;">
             </div>
 
             <!-- Form Last Name -->
-            <div class="d-flex p-2 justify-content-start form-outline mb-2" style="margin-left: -110px;">
-              <input type="text" placeholder="Last Name" id="inputpassword5" class="form-control p-2" style="width: 350px; font-size: 12px; font-family: poppins;">
+            <div class="d-flex col p-2 justify-content-end form-outline mb-2" style="margin-left: 35px;">
+              <input type="text" placeholder="Last Name" id="inputpassword5" class="form-control p-2" style="width: 150px; font-size: 12px; font-family: poppins;">
             </div>
+
+           </div>
 
           </div>
 
@@ -57,12 +60,12 @@
           </div>
 
           <div class="d-flex p-2 justify-content-start">
-            <button class="btn btn-rounded p-2 fw-bold" style="margin-left: -110px; width: 350px; background-color: blue; color: #fff; border-radius: 60px;">Sign Up</button>
+            <button class="btn btn-rounded p-2 fw-bold" onclick="location.href='http://127.0.0.1:8000/loginadmin'" style="margin-left: -110px; width: 350px; background-color: blue; color: #fff; border-radius: 60px;">Daftar</button>
           </div>
 
           <div class="col mt-3 d-flex justify-content-start" style="margin-left: -30px;">
             <p class="text-start fw-semibold" style="font-size: 12px;">Sudah punya akun?</p>
-            <a href="#" class="fw-bold alert-link text-decoration-none" onclick="location.href='http://127.0.0.1:8000/registeradmin'"  style="font-size: 12px; margin-left: 5px; color: #0C73EB;">Masuk disini</a>
+            <a href="#" class="fw-bold alert-link text-decoration-none" onclick="location.href='http://127.0.0.1:8000/loginadmin'"  style="font-size: 12px; margin-left: 5px; color: #0C73EB;">Masuk disini</a>
           </div>
 
           <!-- Button Register Google-->
