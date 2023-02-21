@@ -16,7 +16,7 @@
     </div>
 
     <!-- Button Menu -->
-    <div class="container">
+    <section class="container">
       <div class="row row-cols-auto" style="margin-left: 355px;">
 
         <!--Project Saya -->
@@ -54,7 +54,7 @@
 
       </div>
 
-    </div>
+    </section>
 
     <div class="container">
       <div class="row row-cols-auto" style="margin-top: 85px; margin-left: 215px;">
@@ -89,7 +89,7 @@
       </div>
 
       <!-- Card Profile -->
-      <div class="card rounded-4" style="width: 307px; height: 512px; margin-top: -680px; margin-left: -98px;">
+      <div class="card rounded-4" style="width: 307px; height: 512px; margin-top: -1080px; margin-left: -98px;">
         <img src="/profile-3.jpg" class="rounded-circle" alt="" style="width: 60px; height: 60px; margin-left: 120px; margin-top: 50px;">
         <h5 class="fw-bold text-lg-center mt-3" style="color: #FFBE55;">Go Youn Jung</h5>
         <span class="text-center fw-bold" style="font-size: 13px; margin-left: -10px; color: #00000030;"><img src="/icon-location.svg" alt=""> Seoul, South Korea</span>

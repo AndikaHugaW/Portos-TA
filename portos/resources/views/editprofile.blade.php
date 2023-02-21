@@ -34,7 +34,7 @@
         </div>
 
         <!-- Button Save dan Cancel -->
-        <div class="text-end" style="margin-left: 535px; margin-top: 380px;">
+        <div class="align-content-end" style="margin-left: 640px; margin-top: 380px;">
           <button type="button p-2 ps-2 pe-2" class="btn rounded fw-bold pe-auto" style="margin-left: 10px; font-family: poppins; background-color: #FFBE55; color: #fff; font-size: 14px;">
             <span>
               Simpan
