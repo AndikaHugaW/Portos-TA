@@ -8,24 +8,7 @@
   </head>
   
   <body>
-    $items = [
-    '1' => [
-        '1.1' => [
-            '1.1.1', '1.1.2'
-        ],
-        '1.2' => [
-            '1.2.1', '1.2.2'
-        ]
-    ],
-    '2' => [
-        '2.1' => [
-            '2.1.1', '2.1.2'
-        ],
-        '2.2' => [
-            '2.2.1', '2.2.2'
-        ]
-    ]
-];
+    
     <x-navbar/>
     <div class="container" style="margin-left: -200px; margin-top: -30px;">
       <img src="/img-background-explore.svg" style="margin-left: 190px; width: 1518px; height: 400px;" alt="background-explore">
@@ -64,18 +47,7 @@
         <div class="row">
 
           <!-- Baris Pertama -->
-          @foreach($items as $item)
-    @if($loop->first)
-        <p>Our first element of the array</p>
-    @endif
-
-    <p>{{ $loop->iteration . '/' . $loop->count }}</p>
-
-    @if($loop->last)
-        <p>Our last element of the array</p>
-    @endif
-@endforeach
-          {{-- <div class="col-md">
+          <div class="col-md">
             <img src="/img-website-restaurant-1.svg" onclick="location.href='http://127.0.0.1:8000/detailporto'" alt="gambar-1" style="width: 300px; height: 200px;">
             <h5 class="fw-bold text-white mx-3">Restaurant - Mobile Apps</h5>
             <p class="text-white fw-semibold mx-3">Kazuha</p>
@@ -157,7 +129,7 @@
             <h5 class="fw-bold text-white mx-3">Restaurant - Mobile Apps</h5>
             <p class="text-white fw-semibold mx-3">Kazuha</p>
           </div>
- --}}
+
 
         </div>
         
