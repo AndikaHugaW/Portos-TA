@@ -23,16 +23,24 @@
               </li>
           
           </ul>
-          <div class="ms-auto">
+          <div class="ms-auto d-flex">
             <img class="px-2 pe-auto" src="/like.svg" alt="like">
             <img class="px-2 pe-auto" onclick="location.href='http://127.0.0.1:8000/notification'" src="/notification.svg" alt="notification">
-            <img onclick="location.href='http://127.0.0.1:8000/profile'" class="rounded-circle pe-auto" src="/profile-3.jpg" alt="profile" style="width: 35px;">  
-            <button type="button p-2" onclick="location.href='http://127.0.0.1:8000/upload'" class="btn rounded fw-bold pe-auto" style="margin-left: 10px; background-color: #FFBE55; color: #fff; font-size: 14px;">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="rounded-circle" src="/profile-3.jpg" style="width: 35px;" alt="">
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item"  onclick="location.href='http://127.0.0.1:8000/editprofile'" href="#">Edit Profile</a></li>
+                <li><a class="dropdown-item" onclick="location.href='http://127.0.0.1:8000/login'" href="#" style="color: red;">Log Out</a></li>
+              </ul>
+            </div> 
+            <button type="button" onclick="location.href='http://127.0.0.1:8000/upload'" class="btn rounded fw-bold pe-auto" style="margin-left: 10px; margin-top: 5px; height: 40px; font-family: poppins; background-color: #FFBE55; color: #fff; font-size: 14px;">
             <span>
               Upload
             </span>
-          </button>
-            </div> 
+            </button>
+          </div> 
         </div>
       </nav>
 </div>

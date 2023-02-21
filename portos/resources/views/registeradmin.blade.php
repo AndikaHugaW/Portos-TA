@@ -21,11 +21,11 @@
       <div class="card rounded" style="width: 80%; border-radius: 100px;">
 
         <!-- Nama Website -->
-        <div class="d-flex justify-content-start" style="margin-left: 50px;">
-          <p class="p-sm-3 fw-bold text-primary" style="font-family: poppins;">PORTOS</p>
+        <div class="d-flex justify-content-start" style="margin-left: 10px;">
+          <p class="p-sm-3 fw-bold text-primary " style="font-family: poppins; font-size: 20px;">PORTOS</p>
         </div>
 
-        <div class="justify-content-start" style="margin-left: 115px;">
+        <div class="justify-content-start" style="margin-left: 115px; width: 400px;">
           <p class="fw-semibold" style="font-size: 12px; font-family: poppins;">Welcome to PORTOS Website</p>
           <p class="fw-bold" style="font-size: 20px; font-family: poppins; margin-top: -15px;">Create new Account</p>
           <p class="fw-normal" style="font-size: 12px; font-family: poppins; margin-top: -15px;">Please enter your details</p>
@@ -65,7 +65,7 @@
 
           <div class="col mt-3 d-flex justify-content-start" style="margin-left: -30px;">
             <p class="text-start fw-semibold" style="font-size: 12px;">Sudah punya akun?</p>
-            <a href="#" class="fw-bold alert-link text-decoration-none" onclick="location.href='http://127.0.0.1:8000/loginadmin'"  style="font-size: 12px; margin-left: 5px; color: #0C73EB;">Masuk disini</a>
+            <a href="#" class="fw-bold alert-link text-decoration-none" onclick="location.href='http://127.0.0.1:8000/loginadmin'"  style="font-size: 12px; font-family: poppins; margin-left: 5px; margin-top: 1px; color: #0C73EB;">Masuk disini</a>
           </div>
 
           <!-- Button Register Google-->
@@ -89,8 +89,8 @@
           </div>
 
            <!-- Gambar ILlustration-->
-          <div class="col-md-6 col-lg-5 d-none d-md-block" style="margin-left: 600px; margin-top: -545px;">
-            <img src="/illustration-admin.png" class="img-fluid" style="width: 400px; height: 600px;" alt="">
+          <div class="col-md-6 col-lg-5 d-none d-md-block" style="margin-left: 350px; margin-top: -545px;">
+            <img src="/developer.jpg" style="width: 690px; height: 600px; border-radius: 20px;" alt="">
           </div>
 
         </div>

@@ -35,8 +35,16 @@
 
         <!-- Button Save dan Cancel -->
         <div class="text-end" style="margin-left: 535px; margin-top: 380px;">
-          <button class="btn mt-2 fw-bold rounded-4" style="font-family: poppins; color: #fff; background-color:#FFBE55; width: 120px; height: 40px;">Simpan</button>
-          <button class="btn mt-2 fw-bold rounded-4 border border-3" style="font-family: poppins; color: black; background-color:#fff; width: 120px; height: 40px; margin-left: 10px;">Batal</button>
+          <button type="button p-2 ps-2 pe-2" class="btn rounded fw-bold pe-auto" style="margin-left: 10px; font-family: poppins; background-color: #FFBE55; color: #fff; font-size: 14px;">
+            <span>
+              Simpan
+            </span>
+          </button>
+            <button type="button p-2" class="btn rounded border fw-bold pe-auto" style="margin-left: 10px; font-family: poppins; background-color: #FFf; font-size: 14px;">
+              <span>
+                Cancel
+              </span>
+            </button>
         </div>
 
       </div>
@@ -44,7 +52,7 @@
       <!-- Nama-->
       <div class="d-flex  justify-content-center" style="margin-top: 100px;">
         <div class="col-auto" style="margin-left: -5px;">
-          <label class="col-form-label fw-semibold" style="font-family: poppins; font-size: 20px;">Nama</label>
+          <label class="d-flex col-form-label fw-semibold" style="font-family: poppins; margin-left: -40px; font-size: 20px;">Nama</label>
         </div>
         <div class="col-auto" style="margin-left: 105px;">
           <input class="form-control" style="width: 800px; height: 40px;">
@@ -54,7 +62,7 @@
       <!-- Email-->
       <div class="d-flex  justify-content-center" style="margin-top: 50px;">
         <div class="col-auto" style="margin-left: -5px;">
-          <label class="col-form-label fw-semibold" style="font-family: poppins; font-size: 20px;">Email</label>
+          <label class="col-form-label fw-semibold" style="font-family: poppins; margin-left: -40px; font-size: 20px;">Email</label>
         </div>
         <div class="col-auto" style="margin-left: 105px;">
           <input class="form-control" style="width: 800px; height: 40px;">
@@ -63,20 +71,11 @@
 
       <!-- No HP-->
       <div class="d-flex  justify-content-center" style="margin-top: 50px;">
-        <div class="col-auto" style="margin-left: -520px;">
-          <h4  class="col-form-label fw-semibold" style="font-family: poppins; font-size: 20px; margin-top: -10px;">No HP</h4>
+        <div class="col-auto" style="margin-left: -5px;">
+          <label class="col-form-label fw-semibold" style="font-family: poppins; margin-left: -40px; font-size: 20px;">No HP</label>
         </div>
-        <div class="form-check form-check-inline" style="margin-left: 100px;">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">Laki - laki</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-          <label class="form-check-label" for="inlineRadio2">Wanita</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-          <label class="form-check-label" for="inlineRadio3">Lainnya</label>
+        <div class="col-auto" style="margin-left: 105px;">
+          <input class="form-control" style="width: 800px; height: 40px;">
         </div>
       </div>
 
@@ -125,113 +124,47 @@
           <button class="btn btn-secondary dropdown-toggle text-dark" type="button" style="background-color: #fff;" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
             Tahun
           </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
-            <li><a class="dropdown-item" href="#">Menu item</a></li>
+          <ul class="dropdown-menu" style="max-height: 300px; overflow-y: scroll;" aria-labelledby="dropdownMenuClickableOutside">
+            <li><a class="dropdown-item" href="#">2000</a></li>
+            <li><a class="dropdown-item" href="#">2001</a></li>
+            <li><a class="dropdown-item" href="#">2002</a></li>
+            <li><a class="dropdown-item" href="#">2003</a></li>
+            <li><a class="dropdown-item" href="#">2004</a></li>
+            <li><a class="dropdown-item" href="#">2005</a></li>
+            <li><a class="dropdown-item" href="#">2006</a></li>
+            <li><a class="dropdown-item" href="#">2007</a></li>
+            <li><a class="dropdown-item" href="#">2008</a></li>
+            <li><a class="dropdown-item" href="#">2009</a></li>
+            <li><a class="dropdown-item" href="#">2010</a></li>
+            <li><a class="dropdown-item" href="#">2011</a></li>
+            <li><a class="dropdown-item" href="#">2012</a></li>
+            <li><a class="dropdown-item" href="#">2013</a></li>
+            <li><a class="dropdown-item" href="#">2014</a></li>
+            <li><a class="dropdown-item" href="#">2015</a></li>
+            <li><a class="dropdown-item" href="#">2016</a></li>
+            <li><a class="dropdown-item" href="#">2017</a></li>
+            <li><a class="dropdown-item" href="#">2018</a></li>
+            <li><a class="dropdown-item" href="#">2019</a></li>
+            <li><a class="dropdown-item" href="#">2020</a></li>
+            <li><a class="dropdown-item" href="#">2021</a></li>
+            <li><a class="dropdown-item" href="#">2022</a></li>
+            <li><a class="dropdown-item" href="#">2023</a></li>
           </ul>
         </div>
       </div>
 
       <!-- Bio -->
       <div class="d-flex  justify-content-center" style="margin-top: 50px;">
-        <div class="col-auto" style="margin-left: -10px;">
-          <label class="col-form-label fw-semibold" style="font-family: poppins; font-size: 20px;">Bio</label>
+        <div class="col-auto" style="margin-left: -30px;">
+          <label class="col-form-label fw-semibold" style="margin-left: -10px;font-family: poppins; font-size: 20px;">Bio</label>
         </div>
         <div class="col-auto" style="margin-left: 135px;">
           <input class="form-control" style="width: 800px; height: 200px;">
         </div>
       </div>  
 
-          <!-- Footer -->
-          <x-footer/>
-  {{-- <footer class="text-black" style="margin-top: 150px; background-color: #fff">
-    <!-- Grid container -->
-    <div class="container p-4">
-      <!--Grid row-->
-      <div class="row">
-        <!--Grid column-->
-        <div class="col-lg-6 col-md-4 mb-4 mb-md-0 " style="margin-left: -90px;">
-          <h5 class="text-uppercase fw-bold">PORTOS</h5>
-          <p class="fw-semibold" style="color: #ADADAD;">Our vision is to provide convenience and help increase your sales business.</p>
-
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
-          <h5 class="fw-bold">Tentang</h5>
-
-          <ul class="list-unstyled mb-0">
-            <li>
-              <p class="fw-semibold text-secondary">How it works</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Featured</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Partnership Business</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Relation</p>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
-          <h5 class="fw-bold">Komunitas</h5>
-
-          <ul class="list-unstyled mt-2">
-            <li>
-              <p class="fw-semibold text-secondary">Events</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Blog</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Podcast</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Invite a friend</p>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        <div class="col-lg-2 col-md-2 mb-4 mb-md-0">
-          <h5 class="fw-bold">Sosial Media</h5>
-
-          <ul class="list-unstyled mt-2">
-            <li>
-              <p class="fw-semibold text-secondary">Discord</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Instagram</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">Twitter</p>
-            </li>
-            <li>
-              <p class="fw-semibold text-secondary">facebook</p>
-            </li>
-          </ul>
-        </div>
-        <!--Grid column-->
-      </div>
-      <!--Grid row-->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-start p-3 mx-3 fw-bold" style="background-color: #ffffff;">
-      ©2022 PORTOS. All rights reserved
-    </div>
-    <!-- Copyright -->
-  </footer> --}}
-  <!-- Footer -->
+        <!-- Footer -->
+        <x-footer/>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
