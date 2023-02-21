@@ -1,7 +1,7 @@
 <!-- Font -->
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-  </style> 
+  </style>
 
 
  <!-- Footer -->
@@ -13,7 +13,7 @@
         <!--Grid column-->
         <div class="col-lg-6 col-md-4 mb-4 mb-md-0 " style="margin-left: -90px;">
           <h5 class="text-uppercase fw-semibold" style="font-family: poppins;">PORTOS</h5>
-          <p class="fw-normal" style="font-family: poppins; width: 300px; color: #ADADAD;">Our vision is to provide convenience and help increase your sales business.</p>
+          <p class="fw-normal" style="font-family: poppins; width: 300px; color: #ADADAD;">Portos merupakan sebuah website yang menghubungkan siswa/siswi dengan perusahaan.</p>
 
         </div>
         <!--Grid column-->
