@@ -10,120 +10,139 @@
 
   <x-navbar/>
 
-    <div class="container align-it d-flex" style="margin-top: -40px;">
-      <img src="/background-profile.svg" style="margin-left: -109px; max-width: 1516px; height: 400px;" alt="background-explore">
+    <section class="container" style="margin-top: -40px;">
+      <img src="/background-profile.svg" style="margin-left: -109px; width: 117%; height: 400px;" alt="background-explore">
+    </section>
 
-    </div>
+    <!-- Card Profile -->
+    <section class="card rounded-4" style="width: 307px; height: 512px; margin-left: 60px; margin-top: -150px;">
+      <div class="d-flex justify-content-center" style="margin-top: 50px;">
+        <img class="rounded-circle" src="/profile-3.jpg" style="width: 80px;" alt="">
+      </div>
 
-    <!-- Button Menu -->
-    <section class="container">
-      <div class="row row-cols-auto" style="margin-left: 355px;">
+      <div class="d-flex row justify-content-center">
+        <h5 class="text-center mt-3" style="font-family: poppins;">Go Youn Jung</h5>
+        <span class="text-center fw-normal p-1" style="font-size: 14px; font-family: poppins;"><img src="/icon-location.svg" alt=""> Seoul, South Korea</span>
+        <p class="text-center" style="width: 200px; font-family: poppis; font-size: 12px;">A wholesome form owner in
+          Montana, Upcoming gallery
+          solo show in Korea</p>
 
-        <!--Project Saya -->
-        <div class="col">
-          <button type="button" class="btn rounded-pill fw-semibold" style="background-color: #FFBE55; color: #fff; font-size: 22px;">
-            <span>
-              <img src="/icon-folder.svg" alt="">Project Saya
-            </span>
-          </button>
-        </div>
+          <div class="container">
+            <div class="row row-cols-auto justify-content-center">
+              <button class="btn rounded-pill fw-semibold text-white" onclick="location.href='http://127.0.0.1:8000/editprofile'" style="background-color: #FFBE55; width: 70px; height: 30px; font-size: 8px;">Edit Profile</button>
+              <img src="/icon-inbox.svg" style="width: 50px; height: 50px; margin-top: -10px; margin-left: 5px;" alt="Button-Inbox">
+              <img src="/icon-logout.svg" onclick="location.href='http://127.0.0.1:8000/login'" style="width: 50px; height: 50px; margin-top: -10px; margin-left: -5px;" alt="Button-Logout">
+            </div>
+          </div>
 
-        <!--Koleksi -->
-        <div class="col">
-          <button type="button" class="btn rounded-pill fw-semibold" style="background-color: #F6F7F9; color: #FFBE55; font-size: 22px;">
-            <span>
-              <img src="/icon-koleksi.svg" alt="">Koleksi
+          <div class="container">
+            <div class="row row-cols-auto justify-content-center mt-4">
+              <img src="/icon-twitter.svg" class="" alt="" style="width: 44px; height: 44px;">
+              <img src="/icon-instagram.svg" class="" alt="" style="width: 44px; height: 44px;">
+              <img src="/icon-facebook.svg" class="" alt="" style="width: 44px; height: 44px;">
+              <img src="/icon-gmail.svg" class="" alt="" style="width: 44px; height: 44px;">
+            </div>
 
-            </span>
+          </div>
+          
+          <hr class="d-flex justify-content-center mt-3" style="width: 50%;">
 
-          </button>
-
-        </div>
-
-        <!--Favorit -->
-        <div class="col">
-          <button type="button" class="btn rounded-pill fw-semibold" style="background-color: #F6F7F9; color: #FFBE55; font-size: 22px;">
-            <span>
-              <img src="/icon-favorit.svg" alt="">Favorit
-
-            </span>
-
-          </button>
-
-        </div>
+          <div class="d-flex justify-content-center">
+            <p class="fw-semibold" style="font-family: poppins; font-size: 12px;">Member since Nov 15, 2022</p>
+          </div>
 
       </div>
 
     </section>
 
-    <div class="container">
-      <div class="row row-cols-auto" style="margin-top: 85px; margin-left: 215px;">
+    <section class="container">
+      <div class="row row-cols-auto" style="margin-left: 355px; margin-top: -340px;">
 
-          <div class="col" >
-            <img class="card-img-top rounded-top" src="/restaurant-app-profile.png" alt="Card image cap" style="width: 340px; height: 200px;">
-            <div class="card-body" style="width: 340px; height: 200px;">
-              <h5 class="card-title mt-2">Restaurant Apps</h5>
-              <img src="/Goyoun-jung.svg" style="margin-top: 20px;" alt=""><p class="card-text fw-semibold" style="margin-top: -25px; margin-left: 40px;">Go Youn Jung</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
+        <div class="btn-group" role="group">
+
+            <!--Project Saya -->
+          <div class="col">
+            <button type="button" class="btn rounded-pill p-2 fw-semibold" style="background-color: #ffbe55; ; color: #F6F7F9; font-size: 22px; width: 190px;">
+              <span>
+                <img src="/icon-folder.svg" style="margin-top: -10px;" alt="">Project Saya
+              </span>
+            </button>
+          </div>
+        
+            <!--Koleksi -->
+          <div class="col">
+            <button type="button" class="btn rounded-pill p-2 mx-3 fw-semibold" style="background-color: #F6F7F9; color: #FFBE55; font-size: 22px; width: 190px;">
+              <span>
+                <img src="/icon-koleksi.svg" alt="">Koleksi
+
+              </span>
+
+            </button>
+
+          </div>
+        
+            <!--Favorit -->
+          <div class="col">
+            <button type="button" class="btn rounded-pill p-2  mx-3 fw-semibold" style="background-color: #F6F7F9; color: #FFBE55; font-size: 22px; width: 190px;">
+              <span>
+                <img src="/icon-favorit.svg" alt="">Favorit
+
+              </span>
+
+            </button>
+
           </div>
 
-          <div class="col" >
-            <img class="card-img-top rounded-top" src="/design-profile-1.jpg" alt="Card image cap" style="width: 340px; height: 200px;">
-            <div class="card-body" style="width: 340px; height: 200px;">
-              <h5 class="card-title mt-2">NOX Music Websites</h5>
-              <img src="/Goyoun-jung.svg" style="margin-top: 20px;" alt=""><p class="card-text fw-semibold" style="margin-top: -25px; margin-left: 40px;">Go Youn Jung</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
+        </div>
 
-          <div class="col" >
-            <img class="card-img-top rounded-top" src="/3d-programmer-profile.png" alt="Card image cap" style="width: 340px; height: 200px;">
-            <div class="card-body" style="width: 340px; height: 200px;">
-              <h5 class="card-title mt-2">Programmer 3D</h5>
-              <img src="/Goyoun-jung.svg" style="margin-top: 20px;" alt=""><p class="card-text fw-semibold" style="margin-top: -25px; margin-left: 40px;">Go Youn Jung</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
 
       </div>
+    </section>
 
-      <!-- Card Profile -->
-      <div class="card rounded-4" style="width: 307px; height: 512px; margin-top: -1080px; margin-left: -98px;">
-        <img src="/profile-3.jpg" class="rounded-circle" alt="" style="width: 60px; height: 60px; margin-left: 120px; margin-top: 50px;">
-        <h5 class="fw-bold text-lg-center mt-3" style="color: #FFBE55;">Go Youn Jung</h5>
-        <span class="text-center fw-bold" style="font-size: 13px; margin-left: -10px; color: #00000030;"><img src="/icon-location.svg" alt=""> Seoul, South Korea</span>
-        <p class="text-center fw-bold" style="font-size: 13px; color: #00000030; margin-top: 20px; margin-left: 65px; width: 175px; height: 80px;">A wholesome form owner in
-          Montana, Upcoming gallery
-          solo show in Korea</p>
+    <!-- Card Project -->
+    <section class="container">
+      <div class="row row-cols-3 mt-5" style="margin-left: 315px;">
 
-        <div class="container">
-          <div class="row row-cols-auto justify-content-center">
-            <button class="btn rounded-pill fw-semibold text-white" onclick="location.href='http://127.0.0.1:8000/editprofile'" style="background-color: #FFBE55; width: 70px; height: 30px; font-size: 8px;">Edit Profile</button>
-            <img src="/icon-inbox.svg" style="width: 50px; height: 50px; margin-top: -10px; margin-left: 5px;" alt="Button-Inbox">
-            <img src="/icon-logout.svg" onclick="location.href='http://127.0.0.1:8000/login'" style="width: 50px; height: 50px; margin-top: -10px; margin-left: -5px;" alt="Button-Logout">
+        <div class="card">
+          <img src="/restaurant-app-profile.png" class="card-img-top" style="height: 200px;" alt="...">
+        
+          <div class="card-body">
+            <div class="container p-2" style="margin-top: 20px; margin-left: -25px;">
+              <h5 class="card-title">Restaurant App</h5>
+              <img src="/Goyoun-jung.svg" alt=""><p class="card-text fw-semibold" style="margin-top: -28px; font-size: 16px; margin-left: 40px;">Go Youn Jung</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+            </div>
           </div>
         </div>
 
-        <div class="container">
-          <div class="row row-cols-auto justify-content-center mt-4">
-            <img src="/icon-twitter.svg" class="" alt="" style="width: 44px; height: 44px;">
-            <img src="/icon-instagram.svg" class="" alt="" style="width: 44px; height: 44px;">
-            <img src="/icon-facebook.svg" class="" alt="" style="width: 44px; height: 44px;">
-            <img src="/icon-gmail.svg" class="" alt="" style="width: 44px; height: 44px;">
+        <div class="col ps-aut0" >
+          <img class="card-img-top rounded-top p-1" src="/restaurant-app-profile.png" alt="Card image cap" style="width: 340px; height: 200px;">
+          <div class="card-body" style="width: 300px; margin-left: 10px; height: 200px;">
+            <p class="card-title mt-2" style="font-size: 18px; font-family: poppins;">Restaurant Apps</p>
+            <img src="/Goyoun-jung.svg" style="margin-top: 20px;" alt=""><p class="card-text fw-semibold" style="margin-top: -28px; font-size: 16px; margin-left: 40px;">Go Youn Jung</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
-
-        <hr class="hr hr-blurry" style="margin-left: 65px; width: 150px; margin-top: 20px;">
-
-        <div class="text-center" style="margin-top: 35px;">
-          <p class="fw-semibold" style="font-size: 10px; color: #00000030;">Member since Nov 15, 2022</p>
         </div>
 
+        <div class="col ps-auto" >
+          <img class="card-img-top rounded-top p-1" src="/restaurant-app-profile.png" alt="Card image cap" style="width: 340px; height: 200px;">
+          <div class="card-body" style="width: 300px; margin-left: 10px; height: 200px;">
+            <p class="card-title mt-2" style="font-size: 18px; font-family: poppins;">Restaurant Apps</p>
+            <img src="/Goyoun-jung.svg" style="margin-top: 20px;" alt=""><p class="card-text fw-semibold" style="margin-top: -28px; font-size: 16px; margin-left: 40px;">Go Youn Jung</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
         </div>
+
+
+        
+
 
       </div>
+    </section>
 
-    </div>
+    
+
+    
 
   <x-footer/>
 
