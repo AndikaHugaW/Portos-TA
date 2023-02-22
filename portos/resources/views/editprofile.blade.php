@@ -55,7 +55,7 @@
           <label class="d-flex col-form-label fw-semibold" style="font-family: poppins; margin-left: -40px; font-size: 20px;">Nama</label>
         </div>
         <div class="col-auto" style="margin-left: 105px;">
-          <input class="form-control" style="width: 800px; height: 40px;">
+          <input class="form-control" placeholder="Nama Lengkap" style="width: 800px; height: 40px;">
         </div>
       </div>
 
@@ -65,17 +65,17 @@
           <label class="col-form-label fw-semibold" style="font-family: poppins; margin-left: -40px; font-size: 20px;">Email</label>
         </div>
         <div class="col-auto" style="margin-left: 105px;">
-          <input class="form-control" style="width: 800px; height: 40px;">
+          <input class="form-control" placeholder="user@gmail.com" style="width: 800px; height: 40px;">
         </div>
       </div>
 
       <!-- No HP-->
       <div class="d-flex  justify-content-center" style="margin-top: 50px;">
         <div class="col-auto" style="margin-left: -5px;">
-          <label class="col-form-label fw-semibold" style="font-family: poppins; margin-left: -40px; font-size: 20px;">No HP</label>
+          <label class="col-form-label fw-semibold"  style="font-family: poppins; margin-left: -40px; font-size: 20px;">No HP</label>
         </div>
         <div class="col-auto" style="margin-left: 105px;">
-          <input class="form-control" style="width: 800px; height: 40px;">
+          <input class="form-control" placeholder="+62-0000-0000-0000" style="width: 800px; height: 40px;">
         </div>
       </div>
 
@@ -159,7 +159,7 @@
           <label class="col-form-label fw-semibold" style="margin-left: -10px;font-family: poppins; font-size: 20px;">Bio</label>
         </div>
         <div class="col-auto" style="margin-left: 135px;">
-          <input class="form-control" style="width: 800px; height: 200px;">
+          <input class="form-control" placeholder="Tulis bio kamu" style="width: 800px; height: 200px;">
         </div>
       </div>  
 
