@@ -144,7 +144,7 @@
     <div class="text-center" style="margin-top: 100px; margin-left: 50px;">
       <h2 class="fw-bold" style="font-size: 60px;">Sudah siap upload Portofolio?</h2>
       <p class="fw-semibold" style="font-size: 18px;">Gabung sekarang dengan siswa rus lainnya dan upload portofolio terbaikmu</p>
-      <img src="/btn-portofolio.svg" style="margin-top: 40px;" alt="Get-started">
+      <img src="/btn-portofolio.svg" onclick="location.href='http://127.0.0.1:8000/login'" style="margin-top: 40px;"  alt="Get-started">
     </div>
 
     <div class="effect-2" style="margin-top: 100px;">
