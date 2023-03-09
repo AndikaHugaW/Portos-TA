@@ -18,13 +18,18 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/sesi', [SessionController::class, 'index']);
+Route::get('/login', function () {
+    return view('login');
+});
 
-Route::post('/sesi/login', [SessionController::class, 'login']);
+Route::get('/loginadmin', function () {
+    return view('loginadmin');
+});
 
-// Route::get('/login', function () {
-//     return view('login');
-// });
+Route::get('/registeradmin', function () {
+    return view('registeradmin');
+});
+
 Route::get('/register', function () {
     return view('register');
 });
