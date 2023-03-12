@@ -50,5 +50,8 @@ Route::get('/loginadmin', function () {
 Route::get('/registeradmin', function () {
     return view('registeradmin');
 });
+Route::get('/admin', function () {
+    return view('admin.master');
+});
 
 Route::get('/home', 'login@index');

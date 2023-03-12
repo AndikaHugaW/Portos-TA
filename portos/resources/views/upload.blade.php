@@ -19,7 +19,7 @@
 
     <!-- Navbar -->
    <x-navbar/>
-      
+
       <section >
 
         <!-- Judul Portofolio -->
@@ -46,7 +46,14 @@
                         <div class="col">
                           <div class="mb-3">
                             <label for="exampleInputEmail1" class="d-flex form-label justify-content-start fw-semibold" style="font-family: poppins; ">Jurusan</label>
-                            <input type="email" placeholder="Nama jurusan" style="font-size: 12px;" class="form-control fw-semibold p-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <select class="form-select" style="height: 52px" id="validationCustom04" required>
+                                <option selected disabled value="">Jurusan</option>
+                                <option>Produksi Grafika</option>
+                                <option>Desain Grafis</option>
+                                <option>Animasi</option>
+                                <option>Desain Komunikasi Visual</option>
+                                <option>Rekayasa Perangkat Lunak</option>
+                              </select>
                           </div>
 
                         </div>
@@ -55,7 +62,12 @@
                         <div class="col">
                           <div class="mb-3">
                             <label for="exampleInputEmail1" class="d-flex form-label justify-content-start fw-semibold" style="font-family: poppins; ">Kelas</label>
-                            <input type="email" placeholder="Kelas berapa" style="font-size: 12px;" class="form-control fw-semibold p-3" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <select class="form-select" style="height: 52px" id="validationCustom04" required>
+                                <option selected disabled value="">Kelas</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                              </select>
                           </div>
                         </div>
 
@@ -72,7 +84,7 @@
 
                     </div>
 
-                   
+
 
                 </div>
 
@@ -117,18 +129,18 @@
                             <input class="form-control" style="height: 200px; width: 290px;" type="file" id="formFile">
                           </div>
                         </div>
-                        
+
 
                       </div>
 
                     </div>
-                    
+
 
                 </div>
 
             </div>
 
-            
+
             <!-- Link Portofolio -->
             <section class="card col rounded" style="margin-left: 30px; width: 790px; height: 250px; margin-top: -250px;">
               <div class="card-body" style="">
@@ -149,19 +161,19 @@
                 <button class="btn rounded fw-bold mx-3 ps-3 pe-3" style="background-color: #fff; font-family: poppins; font-size: 14px;">Cancel</button>
               </div>
             </section>
-            
+
 
 
             </div>
 
         </div>
 
-    
+
       </section>
 
     <x-footer/>
 
-   
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>

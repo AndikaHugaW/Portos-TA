@@ -16,7 +16,7 @@
     </div>
 
     <!-- Button Menu -->
-    <section class="container">
+    <div class="container">
       <div class="row row-cols-auto" style="margin-left: 355px;">
 
         <!--Project Saya -->
@@ -29,7 +29,7 @@
         </div>
 
         <!--Koleksi -->
-        <div class="col">
+        {{-- <div class="col">
           <button type="button" class="btn rounded-pill fw-semibold" style="background-color: #F6F7F9; color: #FFBE55; font-size: 22px;">
             <span>
               <img src="/icon-koleksi.svg" alt="">Koleksi
@@ -38,7 +38,7 @@
 
           </button>
 
-        </div>
+        </div> --}}
 
         <!--Favorit -->
         <div class="col">
@@ -54,7 +54,7 @@
 
       </div>
 
-    </section>
+    </div>
 
     <div class="container">
       <div class="row row-cols-auto" style="margin-top: 85px; margin-left: 215px;">
@@ -63,7 +63,7 @@
             <img class="card-img-top rounded-top" src="/restaurant-app-profile.png" alt="Card image cap" style="width: 340px; height: 200px;">
             <div class="card-body" style="width: 340px; height: 200px;">
               <h5 class="card-title mt-2">Restaurant Apps</h5>
-              <img src="/Goyoun-jung.svg" style="margin-top: 20px;" alt=""><p class="card-text fw-semibold" style="margin-top: -25px; margin-left: 40px;">Go Youn Jung</p>
+              <img src="/Goyoun-jung.svg" style="margin-top: 20px;" alt=""><p class="card-text fw-semibold" style="margin-top: -25px; margin-left: 40px;"> Go YounJung</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
@@ -72,7 +72,7 @@
             <img class="card-img-top rounded-top" src="/design-profile-1.jpg" alt="Card image cap" style="width: 340px; height: 200px;">
             <div class="card-body" style="width: 340px; height: 200px;">
               <h5 class="card-title mt-2">NOX Music Websites</h5>
-              <img src="/Goyoun-jung.svg" style="margin-top: 20px;" alt=""><p class="card-text fw-semibold" style="margin-top: -25px; margin-left: 40px;">Go Youn Jung</p>
+              <img src="/Goyoun-jung.svg" style="margin-top: 20px;" alt=""><p class="card-text fw-semibold" style="margin-top: -25px; margin-left: 40px;">RAVEEE</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
@@ -89,7 +89,7 @@
       </div>
 
       <!-- Card Profile -->
-      <div class="card rounded-4" style="width: 307px; height: 512px; margin-top: -1080px; margin-left: -98px;">
+      <div class="card rounded-4" style="width: 307px; height: 512px; margin-top: -680px; margin-left: -98px;">
         <img src="/profile-3.jpg" class="rounded-circle" alt="" style="width: 60px; height: 60px; margin-left: 120px; margin-top: 50px;">
         <h5 class="fw-bold text-lg-center mt-3" style="color: #FFBE55;">Go Youn Jung</h5>
         <span class="text-center fw-bold" style="font-size: 13px; margin-left: -10px; color: #00000030;"><img src="/icon-location.svg" alt=""> Seoul, South Korea</span>
@@ -125,8 +125,10 @@
 
     </div>
 
-  <x-footer/>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <div style="margin-top: 200px">
+        <x-footer/>
+    </div>
   </body>
 </html>
