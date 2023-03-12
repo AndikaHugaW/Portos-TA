@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
 Route::get('/login', function () {
     return view('login');
 });
+
+Route::get('/loginadmin', function () {
+    return view('loginadmin');
+});
+
+Route::get('/registeradmin', function () {
+    return view('registeradmin');
+});
+
 Route::get('/register', function () {
     return view('register');
 });
@@ -43,7 +54,6 @@ Route::get('/upload', function () {
 Route::get('/notification', function () {
     return view('notification');
 });
-
 Route::get('/loginadmin', function () {
     return view('loginadmin');
 });
@@ -53,5 +63,7 @@ Route::get('/registeradmin', function () {
 Route::get('/admin', function () {
     return view('admin.master');
 });
+
+Route::get('/home', 'login@index');
 
 Route::get('/home', 'login@index');
