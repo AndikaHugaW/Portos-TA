@@ -14,45 +14,44 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/sesi', [SessionController::class, 'masuk']);
+Route::post('/sesi/login', [SessionController::class, 'login']);
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/sesi/register', [SessionController::class, 'register']);
+Route::post('/sesi/create', [SessionController::class, 'create']);
 
-Route::get('/loginadmin', function () {
-    return view('loginadmin');
-});
-
-Route::get('/registeradmin', function () {
-    return view('registeradmin');
-});
-
-Route::get('/register', function () {
-    return view('register');
+Route::get('/home', function () {
+    return view('/home');
 });
 // Route::get('/', function () {
-//     return view('home');
+//     return view('/masuk');
 // });
-Route::get('/explore', function () {
-    return view('explore');
-});
+
+
+
+    Route::get('/explore', function () {
+        return view('explore');
+    });
+
 Route::get('/profile', function () {
     return view('profile');
 });
+
 Route::get('/editprofile', function () {
     return view('editprofile');
 });
+
+Route::put('/profile', [App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+
+
 Route::get('/detailporto', function () {
-    return view('detailporto');
-});
+     return view('detailporto');
+ });
+
 Route::get('/upload', function () {
     return view('upload');
 });
-Route::get('/notification', function () {
-    return view('notification');
-});
 
-Route::get('/home', 'login@index');
+// Route::get('/notification', function () {
+//     return view('notification');
+// });

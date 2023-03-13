@@ -32,7 +32,10 @@
             <h4 class="fw-bold" style="font-family: poppins; font-size: 24px;">Edit Profil</h4>
             <p class="fw-normal" style="font-family: poppins; font-size: 12px; margin-top: -5px;">Lengkapi Foto dan Data Diri Anda</p>
         </div>
-
+        
+        <form method="POST" action="{{ route('profile.update') }}">
+          @csrf
+          @method('PUT')
         <!-- Button Save dan Cancel -->
         <div class="align-content-end" style="margin-left: 640px; margin-top: 380px;">
           <button type="button p-2 ps-2 pe-2" class="btn rounded fw-bold pe-auto" style="margin-left: 10px; font-family: poppins; background-color: #FFBE55; color: #fff; font-size: 14px;">
@@ -72,84 +75,30 @@
       <!-- No HP-->
       <div class="d-flex  justify-content-center" style="margin-top: 50px;">
         <div class="col-auto" style="margin-left: -5px;">
-          <label class="col-form-label fw-semibold" style="font-family: poppins; margin-left: -40px; font-size: 20px;">No HP</label>
+          <label class="col-form-label fw-semibold" style="font-family: poppins; margin-left: -40px; font-size: 20px;">Twitter</label>
         </div>
         <div class="col-auto" style="margin-left: 105px;">
           <input class="form-control" style="width: 800px; height: 40px;">
         </div>
       </div>
 
-      <!-- Tanggal Lahir-->
-      <div class="d-flex  justify-content-center" style="margin-top: 50px; margin-left: -510px;">
-        <div class="col-auto" style="">
-          <h4 class="col-form-label fw-semibold mt-1" style="font-family: poppins; font-size: 18px; margin-top: -10px;">Tanggal Lahir</h4>
+      <!-- No HP-->
+      <div class="d-flex  justify-content-center" style="margin-top: 50px;">
+        <div class="col-auto" style="margin-left: -5px;">
+          <label class="col-form-label fw-semibold" style="font-family: poppins; margin-left: -40px; font-size: 20px;">Instagram</label>
         </div>
-
-        <!-- Hari-->
-        <div class="btn-group" style="margin-left: 45px;">
-          <button class="btn btn-secondary dropdown-toggle text-dark" type="button" style="background-color: #fff;" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
-            Hari
-          </button>
-          
-          <ul class="dropdown-menu" style="max-height: 300px; overflow-y: scroll;" aria-labelledby="dropdownMenuClickableOutside">  
-            @for ($i = 1; $i < 32 ;$i++)
-            <li><a class="dropdown-item" href="#">{{$i}}</a></li>  
-            @endfor
-          </ul>
+        <div class="col-auto" style="margin-left: 105px;">
+          <input class="form-control" style="width: 800px; height: 40px;">
         </div>
-
-        <!--Tanggal-->
-        <div class="btn-group" style="margin-left: 30px;">
-          <button class="btn btn-secondary dropdown-toggle text-dark" type="button" style="background-color: #fff;" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
-            Bulan
-          </button>
-          <ul class="dropdown-menu" style="max-height: 300px; overflow-y: scroll;" aria-labelledby="dropdownMenuClickableOutside">
-            <li><a class="dropdown-item" href="#">Januari</a></li>
-            <li><a class="dropdown-item" href="#">Februari</a></li>
-            <li><a class="dropdown-item" href="#">Maret</a></li>
-            <li><a class="dropdown-item" href="#">April</a></li>
-            <li><a class="dropdown-item" href="#">Mei</a></li>
-            <li><a class="dropdown-item" href="#">Juni</a></li>
-            <li><a class="dropdown-item" href="#">Juli</a></li>
-            <li><a class="dropdown-item" href="#">Agustus</a></li>
-            <li><a class="dropdown-item" href="#">September</a></li>
-            <li><a class="dropdown-item" href="#">Oktober</a></li>
-            <li><a class="dropdown-item" href="#">November</a></li>
-            <li><a class="dropdown-item" href="#">Desember</a></li>
-          </ul>
+      </div>
+      
+      <!-- No HP-->
+      <div class="d-flex  justify-content-center" style="margin-top: 50px;">
+        <div class="col-auto" style="margin-left: -5px;">
+          <label class="col-form-label fw-semibold" style="font-family: poppins; margin-left: -40px; font-size: 20px;">Facebook</label>
         </div>
-
-        <!--Tahun-->
-        <div class="btn-group" style="margin-left: 30px;">
-          <button class="btn btn-secondary dropdown-toggle text-dark" type="button" style="background-color: #fff;" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
-            Tahun
-          </button>
-          <ul class="dropdown-menu" style="max-height: 300px; overflow-y: scroll;" aria-labelledby="dropdownMenuClickableOutside">
-            <li><a class="dropdown-item" href="#">2000</a></li>
-            <li><a class="dropdown-item" href="#">2001</a></li>
-            <li><a class="dropdown-item" href="#">2002</a></li>
-            <li><a class="dropdown-item" href="#">2003</a></li>
-            <li><a class="dropdown-item" href="#">2004</a></li>
-            <li><a class="dropdown-item" href="#">2005</a></li>
-            <li><a class="dropdown-item" href="#">2006</a></li>
-            <li><a class="dropdown-item" href="#">2007</a></li>
-            <li><a class="dropdown-item" href="#">2008</a></li>
-            <li><a class="dropdown-item" href="#">2009</a></li>
-            <li><a class="dropdown-item" href="#">2010</a></li>
-            <li><a class="dropdown-item" href="#">2011</a></li>
-            <li><a class="dropdown-item" href="#">2012</a></li>
-            <li><a class="dropdown-item" href="#">2013</a></li>
-            <li><a class="dropdown-item" href="#">2014</a></li>
-            <li><a class="dropdown-item" href="#">2015</a></li>
-            <li><a class="dropdown-item" href="#">2016</a></li>
-            <li><a class="dropdown-item" href="#">2017</a></li>
-            <li><a class="dropdown-item" href="#">2018</a></li>
-            <li><a class="dropdown-item" href="#">2019</a></li>
-            <li><a class="dropdown-item" href="#">2020</a></li>
-            <li><a class="dropdown-item" href="#">2021</a></li>
-            <li><a class="dropdown-item" href="#">2022</a></li>
-            <li><a class="dropdown-item" href="#">2023</a></li>
-          </ul>
+        <div class="col-auto" style="margin-left: 105px;">
+          <input class="form-control" style="width: 800px; height: 40px;">
         </div>
       </div>
 
@@ -162,6 +111,7 @@
           <input class="form-control" style="width: 800px; height: 200px;">
         </div>
       </div>  
+    </form>
 
         <!-- Footer -->
         <x-footer/>

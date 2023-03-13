@@ -66,7 +66,7 @@
 
           <ul class="list-unstyled mt-2" style="margin-left: 200px">
             <li>
-              <p class="fw-semibold text-secondary">Discord</p>
+              <p class="fw-semibold text-secondary" onclick="location.href='http://127.0.0.1:8000/sesi'">Discord</p>
             </li>
             <li>
               <p class="fw-semibold text-secondary">Instagram</p>
