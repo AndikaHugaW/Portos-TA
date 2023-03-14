@@ -119,7 +119,7 @@
           </div>
         </div>
 
-        <div class="card col-1" style="width: 14rem; margin-left: 30px;">
+        <div class="card col-1" style="width: 14rem; ">
           <img src="/design-explore.png" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="title card-text" style="margin-left: -10px">Judul Portofolio</p>
