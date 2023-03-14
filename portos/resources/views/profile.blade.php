@@ -119,6 +119,8 @@
           </div>
         </div>
 
+        
+
         <div class="card col-1" style="width: 14rem; ">
           <img src="/design-explore.png" class="card-img-top" alt="...">
           <div class="card-body">
