@@ -42,6 +42,55 @@ class SessionController extends Controller
         return view('sesi/register');
     }
 
+    public function index()
+    {
+    // $users = User::find($id);
+    // return view('profile', ['users' => $users])
+        $users = Auth::user();
+        return view('profile', ['users' => $users]);
+    }
+
+    public function edit()
+    {
+    $user = Auth::user();
+    return view('update', compact('user'));
+    }
+
+        public function update(Request $request, $id)
+        {
+            $this->validate($request, [
+                'name' => 'required',
+                'email' => 'required|email',
+                'twitter' => 'required',
+                'instagram' => 'required',
+                'facebook' => 'required',
+                'bio' => 'required',
+            ],[
+                'name' => 'Masukkan nama anda',
+                'email' => 'Masukkan email anda',
+            ]);
+            
+        
+            $user = User::findOrFail($id);
+            $user->update([
+            "name" => $request->name,
+            "email" => $request->email,
+            "twitter" => $request->twitter,
+            "instagram" => $request->instagram,
+            "facebook" => $request->facebook,
+            "bio" => $request->bio,
+            ]);
+            
+            $user->save();
+
+            
+        
+            return redirect()->back()->with('success', 'Profile updated successfully.');
+        }
+    
+
+
+
     function create(Request $request)
     {
         Session::flash('name',$request->name);
@@ -78,5 +127,4 @@ class SessionController extends Controller
             return redirect('sesi')-> withErrors('Username dan password yang dimasukan tidak valid');
         }
     ;}
-
 }

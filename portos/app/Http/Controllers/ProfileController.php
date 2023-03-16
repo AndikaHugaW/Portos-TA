@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rule;
 
 
-class ProfileController extends Controller
+class Profile extends Controller
 {
    
 
