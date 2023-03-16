@@ -46,7 +46,17 @@ Route::get('/profile', 'App\Http\Controllers\SessionController@index')->name('pr
 Route::get('/editprofile', function () {
     return view('update');
 });
+Route::get('/loginadmin', function () {
+    return view('loginadmin');
+});
+Route::get('/registeradmin', function () {
+    return view('registeradmin');
+});
+Route::get('/admin', function () {
+    return view('admin.master');
+});
 
+<<<<<<< HEAD
 Route::get('/profile/edit', 'App\Http\Controllers\SessionController@edit');
 Route::post('/update/{id}', 'App\Http\Controllers\SessionController@update')->name('update');
 
@@ -69,3 +79,8 @@ Route::get('/detailporto', function () {
 Route::get('/notification', function () {
   return view('notification');
 });
+=======
+Route::get('/home', 'login@index');
+
+Route::get('/home', 'login@index');
+>>>>>>> 154b858e410a0a68065ff88511b016f49238415c

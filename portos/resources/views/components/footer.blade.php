@@ -5,7 +5,7 @@
 
 
  <!-- Footer -->
- <footer class="text-black" style="margin-top: 150px; background-color: #fff">
+ <footer class="text-black" style="background-color: #fff; width: 100%">
     <!-- Grid container -->
     <div class="container p-4">
       <!--Grid row-->
@@ -85,7 +85,7 @@
     </div>
     <!-- Grid container -->
 
-    <hr class="hr hr-blurry" style="margin-left: 35px; width: 1410px; margin-top: 20px;">
+    <hr class="hr hr-blurry" style="margin-left: 35px; width: 95%; margin-top: 20px;">
 
     <!-- Copyright -->
     <div class="text-start p-3 mx-3 mt-3 fw-bold" style="background-color: #ffffff;">
