@@ -1,7 +1,7 @@
   <!-- Font -->
 <style>
    .button-navbar:hover {
-        background-color: #DDDDDD;
+        color: blue;
         /* background-color: black */
     }
     /* .button-navbar::after {
@@ -23,29 +23,28 @@
           <ul class="navbar-nav">
 
             <li class="nav-item active" aria-current="page">
-              <a class="nav-link fw-bold button-navbar" style="font-size: 20px; font-family: poppins; color: #232F58" href="/home">Beranda</a>
+              <a class="nav-link fw-bold button-navbar" style="font-size: 20px; font-family: poppins;" href="/home">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold button-navbar" style="font-size: 20px; font-family: poppins; color: #232F58" href="/explore">Explore</a>
+              <a class="nav-link fw-bold button-navbar" style="font-size: 20px; font-family: poppins;" href="/explore">Explore</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link fw-bold button-navbar" style="font-size: 20px; font-family: poppins; color: #232F58" href="/profile">Profile</a>
+                <a class="nav-link fw-bold button-navbar" style="font-size: 20px; font-family: poppins; " href="/profile">Profile</a>
               </li>
           
           </ul>
           <div class="ms-auto d-flex">
-            <img class="px-2 pe-auto button-navbar" style="cursor: pointer;" src="/like.svg" alt="like">
             <img class="px-2 pe-auto button-navbar" style="cursor: pointer;" onclick="location.href='http://127.0.0.1:8000/notification'" src="/notification.svg" alt="notification">
             <div class="dropdown">
               <button class="btn dropdown-toggle button-navbar" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 <img class="rounded-circle" src="/profile-3.jpg" style="width: 35px;" alt="">
               </button>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item"  onclick="location.href='http://127.0.0.1:8000/editprofile'" href="#">Edit Profile</a></li>
+                <li><a class="dropdown-item"  onclick="location.href='/profile/edit'" href="#">Edit Profile</a></li>
                 <li><a class="dropdown-item" onclick="location.href='http://127.0.0.1:8000/sesi'" href="#" style="color: red;">Log Out</a></li>
               </ul>
             </div> 
-            <button type="button" onclick="location.href='http://127.0.0.1:8000/upload'" class="btn rounded fw-bold pe-auto" style="margin-left: 10px; margin-top: 5px; height: 40px; font-family: poppins; background-color: #FFBE55; color: #fff; font-size: 14px;">
+            <button type="button" onclick="location.href='http://127.0.0.1:8000/posting'" class="btn rounded fw-bold pe-auto" style="margin-left: 10px; margin-top: 5px; height: 40px; font-family: poppins; background-color: #FFBE55; color: #fff; font-size: 14px;">
             <span>
               Upload
             </span>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\JudulPortos;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -42,6 +43,68 @@ class SessionController extends Controller
         return view('sesi/register');
     }
 
+    public function index()
+    {
+    // $users = User::find($id);
+    // return view('profile', ['users' => $users])
+        $users = Auth::user();
+        $judul_portos = JudulPortos::get();
+        return view('profile', ['users' => $users,'judul_portos'=>$judul_portos]);
+    }
+
+    public function edit()
+    {
+    $user = Auth::user();
+    return view('update', compact('user'));
+    }
+    
+    
+    public function update(Request $request, $id)
+    {
+        $this->validate($request, [
+            'name' => 'required',
+            'email' => 'required|email',
+        ], [
+            'name' => 'Masukkan nama anda',
+            'email' => 'Masukkan email anda',
+        ]);
+    
+        $user = User::findOrFail($id);
+        $user->name = $request->name;
+        $user->email = $request->email;
+
+        if ($request->hasFile('profile_image')) {
+            $image = $request->file('profile_image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            $image->move(public_path('profile_image'), $filename);
+            $user->profile_image = $filename;
+        }
+    
+        if ($request->has('twitter')) {
+            $user->twitter = $request->twitter;
+        }
+    
+        if ($request->has('instagram')) {
+            $user->instagram = $request->instagram;
+        }
+    
+        if ($request->has('facebook')) {
+            $user->facebook = $request->facebook;
+        }
+    
+        if ($request->has('bio')) {
+            $user->bio = $request->bio;
+        }
+    
+        $user->save();
+    
+        return redirect()->back()->with('success', 'Profile updated successfully.');
+    }
+    
+    
+
+
+
     function create(Request $request)
     {
         Session::flash('name',$request->name);
@@ -78,5 +141,4 @@ class SessionController extends Controller
             return redirect('sesi')-> withErrors('Username dan password yang dimasukan tidak valid');
         }
     ;}
-
 }

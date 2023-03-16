@@ -40,7 +40,7 @@
 
       <div class="col mt-3 d-flex justify-content-center" style="margin-left: 200px;">
         <p class="text-start fw-semibold">Tidak punya akun?</p>
-        <p class="fw-bold alert-link" onclick="location.href='http://127.0.0.1:8000/sesi/register'"  style="margin-left: 15px; color: #FFBE55; cursor:pointer">Daftar disini</p>
+        <p class="fw-bold alert-link" onclick="location.href='/sesi/register'"  style="margin-left: 15px; color: #FFBE55; cursor:pointer">Daftar disini</p>
       </div>
       
     </div>  

@@ -38,17 +38,17 @@
       <h1 class="fw-bold" style="color:#FFBE55;">Portofolio Website</h1>
       <p class="fw-semibold" style="color: #ADADAD;">1000 inspiring portofolio website work,Designs,Illustration,and Animations</p>
 
+      <div class="d-flex justify-content-center row-cols-auto" style="font-size: 18px;  margin-top: 50px; color: #ADADAD;">
+        <div class="col  fw-semibold" style="color: black">Animation</div>
+        <div class="col mx-3 fw-semibold">Branding</div>
+        <div class="col mx-3 fw-semibold">Illustration</div>
+        <div class="col mx-3 fw-semibold">Photography</div>
+        <div class="col mx-3 fw-semibold">Mobile</div>
+        <div class="col mx-3 fw-semibold">Website</div>
+      </div>
+
     </div>
 
-    <div class="container">
-      <div class="row align-items-center" style="font-size: 18px; margin-left: 100px; margin-top: 50px; color: #ADADAD;">
-        <div class="col fw-semibold" style="color: black">Animation</div>
-        <div class="col fw-semibold">Branding</div>
-        <div class="col fw-semibold">Illustration</div>
-        <div class="col fw-semibold">Photography</div>
-        <div class="col fw-semibold">Mobile</div>
-        <div class="col fw-semibold">Website</div>
-      </div>
       <!--Img Kedua -->
       <div class="container text-center" style="margin-top: 100px;">
         <div class="row">
@@ -66,13 +66,13 @@
           </div>
 
           <div class="col-md">
-            <img src="/img-website-illustration-1.svg" alt="gambar-1" style="width: 300px; height: 200px;">
+            <img src="/img-website-restaurant-1.svg" alt="gambar-1" style="width: 300px; height: 200px;">
             <h5 class="fw-bold text-white mx-3">Restaurant - Mobile Apps</h5>
             <p class="text-white fw-semibold mx-3">Kazuha</p>
           </div>
 
           <div class="col-md">
-            <img src="/img-website-3d-neymar.svg" alt="gambar-1" style="width: 300px; height: 200px;">
+            <img src="/img-website-restaurant-1.svg" alt="gambar-1" style="width: 300px; height: 200px;">
             <h5 class="fw-bold text-white mx-3">Restaurant - Mobile Apps</h5>
             <p class="text-white fw-semibold mx-3">Kazuha</p>
           </div>
@@ -94,13 +94,13 @@
           </div>
 
           <div class="col-md">
-            <img src="/img-website-illustration-1.svg" alt="gambar-1" style="width: 300px; height: 200px;">
+            <img src="/img-website-restaurant-1.svg" alt="gambar-1" style="width: 300px; height: 200px;">
             <h5 class="fw-bold text-white mx-3">Restaurant - Mobile Apps</h5>
             <p class="text-white fw-semibold mx-3">Kazuha</p>
           </div>
 
           <div class="col-md">
-            <img src="/img-website-3d-neymar.svg" alt="gambar-1" style="width: 300px; height: 200px;">
+            <img src="/img-website-restaurant-1.svg" alt="gambar-1" style="width: 300px; height: 200px;">
             <h5 class="fw-bold text-white mx-3">Restaurant - Mobile Apps</h5>
             <p class="text-white fw-semibold mx-3">Kazuha</p>
           </div>
@@ -111,6 +111,8 @@
       </div>
         </div>
         </div>
+
+    <x-footer/>    
       
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
       
