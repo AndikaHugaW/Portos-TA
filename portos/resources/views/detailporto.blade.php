@@ -19,21 +19,42 @@
     <div class="container">
         <div class="row row-cols-auto justify-item-center position-absolute top-50 start-50 translate-middle"></div>
             <img src="/profile-3.jpg" class="rounded-circle" style="width: 100px; height: 100px; margin-top: 80px;" alt=""><a href=""></a>
-            <h5 class="fw-bold" style="margin-top: -80px; margin-left: 120px; font-family: Poppins;">UI UX Design - Restaurant Website</h5>
-            <p class="fw-semibold" style="margin-top: 10px; margin-left: 120px; font-family: Poppins;">Go Youn Jung</p>
-
-        <div class="d-grid gap-2 d-md-block" style="margin-left: 1100px; margin-top: -58px;">
-            <button class="btn rounded fw-bold" style="font-size: 15px; font-family: 'Poppins'; background-color: #fff; border-radius: 50px;" type="button">Simpan</button>
-            <button class="btn rounded fw-bold text-white" style="font-size: 15px; font-family: 'Poppins'; background-color: #FFBE55; margin-left: 10px; border-radius: 50px;" type="button">Suka</button>
-
-        </div>    
+            <h5 class="fw-bold" style="margin-top: -80px; margin-left: 120px; font-family: Poppins;">{{$judul_portos->kategori}}-{{$judul_portos->judul}}</h5>
+            <p class="fw-semibold" style="margin-top: 10px; margin-left: 120px; font-family: Poppins;">{{$users->name}}</p>  
 
     </div>
 
-    <div class="justify-item-center position-absolute top-50 start-50 translate-middle" style="margin-top: 300px;">
-      <img src="/restaurant-app-profile.png" style="width: 1300px; height: 705px; border-radius: 30px;" alt="">
-      <p class="fw-semibold" style="width: 500px; font-size: 18px; margin-top: 80px; font-family: 'Poppins';">Hi Guys, This is my Exploration for Food Delivery  Landing Page  How  about you? Let me Know your Awesome Feedback Dont forget to like it</p>
-      <p class="fw-medium" style="font-family: Poppins;">Contact with Us<a class="ms-2 text-decoration-none fw-semibold" href="" style="font-family: Poppins; color:#FFBE55">Goyounjung@gmail.com</a></p>
+    <d class="justify-item-center position-absolute top-50 start-50 translate-middle" style="margin-top: 400px;">
+
+      <section id="carouselExampleControls" class="carousel slide pt-5" data-bs-ride="carousel" style="width: 1300px; height: 800px; border-radius: 30px;" alt="">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 1300px; height: 800px; border-radius: 30px;">
+          <div class="carousel-inner">
+            @foreach (json_decode($judul_portos->images) as $key => $image)
+            <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
+              <img src="{{asset('images/' . $image)}}" class="d-block w-100" style="height: 800px; border-radius: 30px;" alt="...">
+            </div>
+            @endforeach
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
+      </section>
+      {{-- <img src="" style="width: 1300px; height: 705px; border-radius: 30px;" alt=""> --}}
+      <div class="">   
+        <p class="fw-semibold" style="width: 500px; font-size: 18px; margin-top: 80px; margin-bottom: 10px; font-family: 'Poppins';">{{$users->name}}</p>
+        <p class="fw-semibold" style="width: 500px; font-size: 18px; margin-top: 10px; margin-bottom: 10px; font-family: 'Poppins';">Kelas: {{$judul_portos->kelas}}</p>
+        <p class="fw-semibold" style="width: 500px; font-size: 18px; margin-top: 10px; margin-bottom: 10px; font-family: 'Poppins';">Jurusan: {{$judul_portos->juruan}}</p>
+      </div>
+      
+      <p class="fw-medium" style="font-family: Poppins;">Contact with Us<a class="ms-2 text-decoration-none fw-semibold"  style="font-family: Poppins; color:#FFBE55">{{$users->email}}</a></p>
+      <p class="fw-medium" style="font-family: Poppins;">Project Link<a class="ms-2 text-decoration-none fw-semibold" href="{{$judul_portos->link}}" style="font-family: Poppins; color:#FFBE55">{{$judul_portos->link}}</a></p>
       <div class="ms-auto" style="margin-top: 10px;">
         <a href="" class="text-decoration-none fw-semibold" style="font-family: Poppins; color:#FFBE55">Twitter</a>
         <a href="" class="text-decoration-none fw-semibold" style="font-family: Poppins; margin-left: 10px; color:#FFBE55">Instagram</a>

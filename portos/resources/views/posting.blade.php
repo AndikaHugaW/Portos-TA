@@ -29,8 +29,9 @@
         <div class="alert alert-danger">{{ $error }}</div>
     @endif
 
-    <form action="{{ route('upload') }}" method="POST" enctype="multipart/form-data">
-        @csrf
+    <form method="POST" action="{{ route('judul_portos.store') }}" enctype="multipart/form-data">
+      @csrf
+    
         <!-- Judul Portofolio -->
         <section>
         <div class="row row-cols-3 d-flex text-center">
@@ -49,7 +50,7 @@
                         <div class="col">
                           <div class="mb-3">
                             <label for="judul_porto" class="d-flex form-label justify-content-start fw-semibold" style="font-family: poppins; ">Judul</label>
-                            <input name="judul_porto" type="text" placeholder="Nama karyamu" value="{{ Session::get('judul_porto')}}" style="font-size: 12px;" class="form-control fw-semibold p-3" id="judul_porto">
+                            <input id="judul" type="text" class="form-control @error('judul') is-invalid @enderror" name="judul" value="{{ old('judul') }}" required autofocus>
                           </div>
 
                         </div>
@@ -58,14 +59,14 @@
                         <div class="col">
                           <div class="mb-3">
                             <label for="exampleInputEmail1" class="d-flex form-label justify-content-start fw-semibold" style="font-family: poppins; ">Jurusan</label>
-                            <select class="form-select" style="height: 52px" id="validationCustom04" required>
-                              <option selected disabled {{ Session::get('nama_jurusan')}}" id="nama_jurusan">Jurusan</option>
-                              <option>Produksi Grafika</option>
-                              <option>Desain Grafis</option>
-                              <option>Animasi</option>
-                              <option>Desain Komunikasi Visual</option>
-                              <option>Rekayasa Perangkat Lunak</option>
-                            </select>
+                            <select id="juruan" class="form-control @error('juruan') is-invalid @enderror" name="juruan" required>
+                              <option value="">Pilih Jurusan</option>
+                              <option value="Produksi Grafika">Produksi Grafika</option>
+                              <option value="Desain Grafis">Desain Grafis</option>
+                              <option value="Animasi">Animasi</option>
+                              <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+                              <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
+                          </select>
                           </div>
 
                         </div>
@@ -74,12 +75,12 @@
                         <div class="col">
                           <div class="mb-3">
                             <label for="kelas" class="d-flex form-label justify-content-start fw-semibold" style="font-family: poppins; ">Kelas</label>
-                            <select class="form-select" style="height: 52px" id="validationCustom04" required>
-                              <option selected disabled {{ Session::get('kelas')}}" id="kelas">Kelas</option>
-                              <option>10</option>
-                              <option>11</option>
-                              <option>12</option>
-                            </select>
+                            <select id="kelas" class="form-control @error('kelas') is-invalid @enderror" name="kelas" required>
+                              <option value="">Pilih Kelas</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                          </select>
                         </div>
                         </div>
 
@@ -87,8 +88,8 @@
                         <div class="col">
                           <div class="mb-3">
                             <label for="kategori" class="d-flex form-label justify-content-start fw-semibold" style="font-family: poppins; ">Kategori</label>
-                            <select class="form-select" style="height: 52px" id="validationCustom04" required>
-                              <option selected disabled {{ Session::get('kelas')}}" id="kelas">Kategori</option>
+                            <select id="kategori" class="form-control @error('kategori') is-invalid @enderror" name="kategori" required>
+                              <option value="">Pilih Kategori</option>
                               <option>Animation</option>
                               <option>Branding</option>
                               <option>Illustration</option>
@@ -113,16 +114,17 @@
 
                     <div class="container">
 
-                      <!-- Import photo 1 -->
+                      <!-- Import photo 1 --> 
+                     
                       <div class="row row-cols-2" style="margin-left: -32px;">
                         <div class="col p-2">
                           <div class="mb-3">
                             <label for="foto" class="form-label d-flex justify-content-start fw-semibold" style="font-family: poppins;">Photo 1</label>
-                            <input name="foto" class="form-control"{{ Session::get('alamat')}} style="height: 200px;" type="file" id="foto">
+                            <input id="images" type="file" class="form-control-file @error('images') is-invalid @enderror" name="images[]" multiple required>
                           </div>
                         </div>
-
-                        <!-- Import photo 2 -->
+                        
+                        {{-- <!-- Import photo 2 -->
                         <div class="col p-2">
                           <div class="mb-3">
                             <label for="foto" class="form-label d-flex justify-content-start fw-semibold">Photo 2</label>
@@ -145,7 +147,7 @@
                             <input name="foto" class="form-control"{{ Session::get('alamat')}} style="height: 200px; width: 290px;" type="file" id="foto">
                           </div>
                         </div>
-                        
+                         --}}
 
                       </div>
 
@@ -166,7 +168,7 @@
 
                 <div class="mb-3 p-3" style="margin-left: -15px;">
                   <label for="link" class="form-label d-flex justify-content-start" style="font-family: poppins;">Link</label>
-                  <input name="link" type="link" class="form-control fw-semibold p-4" style="font-size: 14px; width: 735px; font-family: poppins;" id="link" placeholder="Kirim tautan atau link">
+                  <input id="link" type="text" class="form-control @error('link') is-invalid @enderror" name="link" value="{{ old('link') }}" required>
                 </div>
               </div>
             </section>

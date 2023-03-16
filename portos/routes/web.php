@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\SessionController;
+use App\Models\JudulPortos;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,15 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/sesi', [SessionController::class, 'masuk']);
-Route::post('/sesi/login', [SessionController::class, 'login']);
-
-Route::get('/sesi/register', [SessionController::class, 'register']);
-Route::post('/sesi/create', [SessionController::class, 'create']);
-
-Route::get('/home', function () {
-    return view('/home');
+Route::group(["prefix" => "/sesi"],function () {
+    Route::get('/', [SessionController::class, '']);
+    Route::post('/login', [SessionController::class, 'login']);
+    
+    Route::get('/register', [SessionController::class, 'register']);
+    Route::post('/create', [SessionController::class, 'create']);
 });
+
+
 
 Route::get('/', function () {
     return view('beranda');
@@ -32,6 +34,9 @@ Route::get('/beranda', 'login@index');
 // Route::get('/', function () {
 //     return view('/masuk');
 // });
+Route::get('/home', function () {
+    return view('home');
+});
 
 Route::get('/explore', function () {
 return view('explore');
@@ -46,19 +51,11 @@ Route::get('/profile', 'App\Http\Controllers\SessionController@index')->name('pr
 Route::get('/editprofile', function () {
     return view('update');
 });
-Route::get('/loginadmin', function () {
-    return view('loginadmin');
-});
-Route::get('/registeradmin', function () {
-    return view('registeradmin');
-});
-Route::get('/admin', function () {
-    return view('admin.master');
-});
 
-<<<<<<< HEAD
 Route::get('/profile/edit', 'App\Http\Controllers\SessionController@edit');
 Route::post('/update/{id}', 'App\Http\Controllers\SessionController@update')->name('update');
+
+Route::post('/judul_portos', 'App\Http\Controllers\JudulController@store')->name('judul_portos.store');
 
 
 Route::get('/posting', function () {
@@ -69,8 +66,10 @@ Route::get('/posting', function () {
 
 
 
-Route::get('/detailporto', function () {
-     return view('detailporto');
+Route::get('/detailporto/{id}', function ($id) {
+    $users = Auth::user();
+    $judul_portos = JudulPortos::find($id);
+     return view('detailporto', compact(['users','judul_portos']));
  });
 
  Route::post('/upload', 'UploadController@upload')->name('upload');
@@ -79,8 +78,3 @@ Route::get('/detailporto', function () {
 Route::get('/notification', function () {
   return view('notification');
 });
-=======
-Route::get('/home', 'login@index');
-
-Route::get('/home', 'login@index');
->>>>>>> 154b858e410a0a68065ff88511b016f49238415c

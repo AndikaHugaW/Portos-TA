@@ -24,9 +24,11 @@
           <img src="/background-edit-profile.jpg" alt="" style="width: 1240px; height: 365px; border-radius: 60px 0 0 0;">
         </div>
 
+        
         <div class="start" style="margin-left: -1200px; margin-top: 300px;">
             <img class="rounded-circle" src="/profile-3.jpg" alt="" style="width: 140px; height: 140px;">
         </div>
+      
 
         <div class="" style="margin-top: 380px; margin-left: 30px;">
             <h4 class="fw-bold" style="font-family: poppins; font-size: 24px;">Edit Profil</h4>
@@ -51,9 +53,9 @@
         </div>
 
       </div>
-
-      <!-- Nama-->
-      <div class="d-flex  justify-content-center" style="margin-top: 100px;">
+      <div id="editProfile" class="">
+        <!-- Nama-->
+      <div  class="d-flex  justify-content-center" style="margin-top: 100px;">
         <div class="col-auto" style="margin-left: -5px;">
           <label class="d-flex col-form-label fw-semibold" style="font-family: poppins; margin-left: -40px; font-size: 20px;">Nama</label>
         </div>
@@ -85,9 +87,7 @@
         </div>
         <div class="col-auto" style="margin-left: 105px;">
           <input type="text" class="form-control" type="text" name="twitter" value="{{ $user->twitter }}" style="width: 800px; height: 40px;">
-          @error('twitter')
-          <div class="alert alert-danger">{{ $message }}</div>
-          @enderror
+          
         </div>
       </div>
 
@@ -118,17 +118,19 @@
       </div>
 
       <!-- Bio -->
-      <div class="d-flex justify-content-center" style="margin-top: 50px; margin-left: -30px;">
+      <div class="d-flex justify-content-center" style="margin-top: 50px;">
         <div class="col-auto" style="margin-left: -5px;">
           <label for="Bio" class="form-label"  style="font-family: poppins; font-size: 20px;">Bio</label>
         </div>
-        <div class="col-auto" style="margin-left: 205px;"> 
-          <input class="form-control" type="text" name="bio" value="{{ $user->bio }}" id="exampleFormControlTextarea1" rows="3" style="margin-left: -30px; width: 800px;"></input>
+        <div class="col-auto" style="margin-left: 105px;"> 
+          <input class="form-control" type="text" name="bio" value="{{ $user->bio }}" id="exampleFormControlTextarea1" rows="3" style="margin-left: -40px; width: 800px;"></input>
           @error('bio')
           <div class="alert alert-danger">{{ $message }}</div>
           @enderror
         </div>
       </div>
+      </div>
+      
 
     </form>
 
@@ -137,4 +139,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
+  <style>
+    #editProfile label {
+      width: 100px;
+    }
+  </style>
 </html>
