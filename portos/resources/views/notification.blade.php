@@ -15,7 +15,7 @@
 
     <title>PORTOS</title>
   </head>
-  <body class="" style="">
+  <body class="" style="-ms-scroll-limit-y-max: 0%">
 
     <x-navbar/>
 
@@ -24,7 +24,7 @@
 
         <div class="row row-cols-auto" style="margin-top: 100px; margin-left: -150px;">
             <div class="col fw-semibold" style="font-size: 14px; font-family: poppins;">Inbox</div>
-            <div class="col fw-semibold" style="font-size: 14px; font-family: poppins; color: #E4E4E4;">Archive</div>
+            {{-- <div class="col fw-semibold" style="font-size: 14px; font-family: poppins; color: #E4E4E4;">Archive</div> --}}
             <p class="fw-semibold text-end" style="font-size: 14px; margin-left: 550px; font-family: poppins; color: #E4E4E4;">Showing messages 1-3 of 3messages</p>
         </div>
 
@@ -39,7 +39,7 @@
       <p class="text-end" style="margin-left: 120px; margin-top: 15px;">Nov 2, 2022</p>
     </div>
 
-    <div class="row row-cols-auto d-flex justify-content-center" style="margin-top: 60px;">
+    <div class="row row-cols-auto d-flex justify-content-center" style="margin-top: 60px; margin-bottom: 100px">
       <img class="btn rounded-circle" src="/icon-winter.jpg" style="width: 90px; margin-left: -10px;" alt="">
       <p class="col mt-3" style="">Winter</p>
       <p class="col" style="margin-left: -70px; margin-top: 40px; color: #E4E4E4;">User</p>

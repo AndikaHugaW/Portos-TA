@@ -16,11 +16,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/sesi', [SessionController::class, 'masuk']);
-Route::post('/sesi/login', [SessionController::class, 'login']);
-
-Route::get('/sesi/register', [SessionController::class, 'register']);
-Route::post('/sesi/create', [SessionController::class, 'create']);
+Route::group(["prefix" => "/sesi"],function () {
+    Route::get('/', [SessionController::class, '']);
+    Route::post('/login', [SessionController::class, 'login']);
+    
+    Route::get('/register', [SessionController::class, 'register']);
+    Route::post('/create', [SessionController::class, 'create']);
+});
 
 
 
