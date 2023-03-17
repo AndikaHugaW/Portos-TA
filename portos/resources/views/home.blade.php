@@ -84,11 +84,7 @@
                 <div class="container mt-5" style="">
                   <div class="row" style="">
                     <h3 class="col d-flex justify-content-center fw-semibold text-white mt-4" style="font-family: poppins;">Portofolio Siswa</h3>
-<<<<<<< HEAD
                     <h6 class="col text-white mt-4 fw-semibold" onclick="location.href='http://127.0.0.1:8000/explore'" style="font-family: poppins; margin-left: 920px; margin-top: 8px; cursor:pointer">Lihat semua</h6>
-=======
-                    <h6 class="col text-white mt-4 fw-semibold" onclick="location.href='http://127.0.0.1:8000/explore'" style="font-family: poppins; margin-left: 920px; margin-top: 8px;">Lihat semua</h6>
->>>>>>> 154b858e410a0a68065ff88511b016f49238415c
                   </div>
                 </div>
 

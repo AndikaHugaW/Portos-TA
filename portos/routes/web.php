@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(["prefix" => "/sesi"],function () {
-    Route::get('/', [SessionController::class, '']);
+    Route::get('/', [SessionController::class, 'masuk']);
     Route::post('/login', [SessionController::class, 'login']);
     
     Route::get('/register', [SessionController::class, 'register']);
