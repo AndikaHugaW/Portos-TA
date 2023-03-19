@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row row-cols-auto justify-item-center position-absolute top-50 start-50 translate-middle"></div>
             <img src="/profile-3.jpg" class="rounded-circle" style="width: 100px; height: 100px; margin-top: 80px;" alt=""><a href=""></a>
-            <h5 class="fw-bold" style="margin-top: -80px; margin-left: 120px; font-family: Poppins;">{{$judul_portos->kategori}}-{{$judul_portos->judul}}</h5>
+            <h5 class="fw-bold" style="margin-top: -80px; margin-left: 120px; font-family: Poppins;">{{$judul_portos->kategori}} - {{$judul_portos->judul}}</h5>
             <p class="fw-semibold" style="margin-top: 10px; margin-left: 120px; font-family: Poppins;">{{$users->name}}</p>  
 
     </div>

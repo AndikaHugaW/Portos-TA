@@ -28,7 +28,7 @@
     
       <div class="d-flex row justify-content-center">
         <h5 class="text-center mt-3" style="font-family: poppins;">{{$users->name}}</h5>
-        <span class="text-center fw-normal p-1" style="font-size: 10px; font-family: poppins;"><img src="/icon-location.svg" alt="">{{$users->email}}</span>
+        <span class="text-center fw-regular p-1" style="font-size: 10px; font-family: poppins;"><img src="/icon-email.svg" alt="">{{$users->email}}</span>
         <p class="text-center" style="width: 200px; font-family: poppis; font-size: 12px;">{{$users->bio}}</p>
 
           <div class="container">
@@ -92,8 +92,8 @@
           <div class="card col-1 " style="width: 14rem; ">
           <img src="{{asset('images/' .  $porto->image[0]->images)}}" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="title card-text" style="margin-left: -10px; text-decoration: none; color: black;">{{$porto->judul}}</p>
-            <img class="rounded-circle" src="/profile-3.jpg" style="width: 30px; margin-left: -10px;" alt=""><p class="fw-semibold" style=" font-size: 14px; font-family: poppins; margin-top: -25px; margin-left: 30px; text-decoration: none; color: black;">{{$users->name}}</p>
+            <p class="title fw-semibold card-text" style="margin-left: -10px; text-decoration: none; color: black;">{{$porto->judul}}</p>
+            <img class="rounded-circle" src="/profile-3.jpg" style="width: 30px; margin-left: -10px;" alt=""><p class="fw-regular" style=" font-size: 14px; font-family: poppins; margin-top: -25px; margin-left: 30px; text-decoration: none; color: black;">{{$users->name}}</p>
           </div>
         </div>
       </a>
