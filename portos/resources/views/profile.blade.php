@@ -1,3 +1,4 @@
+{{-- @dd($judul_portos) --}}
 <!doctype html>
 <html lang="en">
   <head>
@@ -32,7 +33,7 @@
 
           <div class="container">
             <div class="row row-cols-auto justify-content-center">
-              <button class="btn rounded-pill fw-semibold text-white" onclick="location.href='http://127.0.0.1:8000/editprofile'" style="background-color: #FFBE55; width: 70px; height: 30px; font-size: 8px;">Edit Profile</button>
+              <button class="btn rounded-pill fw-semibold text-white" onclick="location.href='/profile/edit'" style="background-color: #FFBE55; width: 70px; height: 30px; font-size: 8px;">Edit Profile</button>
               <img src="/icon-inbox.svg" style="width: 50px; height: 50px; margin-top: -10px; margin-left: 5px;" alt="Button-Inbox">
               <img src="/icon-logout.svg" onclick="location.href='http://127.0.0.1:8000/login'" style="width: 50px; height: 50px; margin-top: -10px; margin-left: -5px;" alt="Button-Logout">
             </div>
@@ -85,11 +86,11 @@
 
     <!-- Card Project -->
     <section class="container">
-      <div class="row row-cols-4 mt-5" style="margin-left: 355px;">
+      <div class="row row-cols-4 p-5" style="margin-left: 305px; margin-top: -30px;">
         @foreach($judul_portos as $porto)
         <a href="/detailporto/{{$porto->id}}" style="text-decoration: none; margin-right: 3em; margin-top: 2em">
           <div class="card col-1 " style="width: 14rem; ">
-          <img src="{{asset('images/' . json_decode($porto->images)[0])}}" class="card-img-top" alt="...">
+          <img src="{{asset('images/' .  $porto->image[0]->images)}}" class="card-img-top" alt="...">
           <div class="card-body">
             <p class="title card-text" style="margin-left: -10px; text-decoration: none; color: black;">{{$porto->judul}}</p>
             <img class="rounded-circle" src="/profile-3.jpg" style="width: 30px; margin-left: -10px;" alt=""><p class="fw-semibold" style=" font-size: 14px; font-family: poppins; margin-top: -25px; margin-left: 30px; text-decoration: none; color: black;">{{$users->name}}</p>
@@ -100,9 +101,7 @@
     </div>
   </section> 
     
-
-    
-
+ 
   <x-footer/>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

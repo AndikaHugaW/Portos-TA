@@ -1,3 +1,4 @@
+{{-- @dd($judul_portos->image) --}}
 <!doctype html>
 <html lang="en">
   <head>
@@ -29,9 +30,10 @@
       <section id="carouselExampleControls" class="carousel slide pt-5" data-bs-ride="carousel" style="width: 1300px; height: 800px; border-radius: 30px;" alt="">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 1300px; height: 800px; border-radius: 30px;">
           <div class="carousel-inner">
-            @foreach (json_decode($judul_portos->images) as $key => $image)
+            @foreach ($judul_portos->image as $key => $image)
             <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
-              <img src="{{asset('images/' . $image)}}" class="d-block w-100" style="height: 800px; border-radius: 30px;" alt="...">
+              {{-- @dump($key) --}}
+              <img src="{{asset('images/' . $image->images)}}" class="d-block w-100" style="height: 800px; border-radius: 30px;" alt="...">
             </div>
             @endforeach
           </div>
@@ -61,6 +63,14 @@
         <a href="" class="text-decoration-none fw-semibold" style="font-family: Poppins; margin-left: 10px; color:#FFBE55">Facebook</a>
       </div>
     </div>
+{{--     
+    <form action="/delete/{id}" method="POST">
+      @csrf
+      @method('DELETE')
+      <button type="submit" class="btn btn-danger">Delete</button>
+  </form> --}}
+  
+
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

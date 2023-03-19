@@ -48,8 +48,8 @@ class SessionController extends Controller
     // $users = User::find($id);
     // return view('profile', ['users' => $users])
         $users = Auth::user();
-        $judul_portos = JudulPortos::get();
-        return view('profile', ['users' => $users,'judul_portos'=>$judul_portos]);
+        $judul_portos = JudulPortos::with('image');
+        return view('profile', ['users' => $users,'judul_portos'=>$judul_portos->get()]);
     }
 
     public function edit()
@@ -141,4 +141,5 @@ class SessionController extends Controller
             return redirect('sesi')-> withErrors('Username dan password yang dimasukan tidak valid');
         }
     ;}
+
 }

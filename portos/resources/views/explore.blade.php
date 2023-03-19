@@ -1,3 +1,4 @@
+{{-- @dd($data) --}}
 <!doctype html>
 <html lang="en">
   <head>
@@ -50,15 +51,27 @@
     </div>
 
       <!--Img Kedua -->
+      
       <div class="container text-center" style="margin-top: 100px;">
         <div class="row">
-
-          <div class="col-md">
-            <img src="/img-website-restaurant-1.svg" alt="gambar-1" style="width: 300px; height: 200px;">
-            <h5 class="fw-bold text-white mx-3">Restaurant - Mobile Apps</h5>
-            <p class="text-white fw-semibold mx-3">Kazuha</p>
+          
+          <section class="container">
+            <div class="row row-cols-4 p-3" style="margin-left: 105px; margin-top: -30px;">
+              @foreach($data as $porto)
+              <a href="/detailporto/{{$porto->id}}" style="text-decoration: none; margin-right: 3em; margin-top: 2em">
+                <div class="card col-1 " style="width: 14rem; ">
+                <img src="{{asset('images/' .  $porto->image[0]->images)}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="title card-text" style="margin-left: -180px; text-decoration: none; color: black;">{{$porto->judul}}</p>
+                  <img class="rounded-circle" src="/profile-3.jpg" style="width: 30px; margin-left: -180px;" alt=""><p class="fw-semibold" style=" font-size: 14px; font-family: poppins; margin-top: -25px; margin-left: -55px; text-decoration: none; color: black;">{{$users->name}}</p>
+                </div>
+              </div>
+            </a>
+            @endforeach
           </div>
+        </section> 
 
+{{-- 
           <div class="col-md">
             <img src="/img-website-portofolio.svg" alt="gambar-1" style="width: 300px; height: 200px;">
             <h5 class="fw-bold text-white mx-3">Restaurant - Mobile Apps</h5>
@@ -75,9 +88,9 @@
             <img src="/img-website-restaurant-1.svg" alt="gambar-1" style="width: 300px; height: 200px;">
             <h5 class="fw-bold text-white mx-3">Restaurant - Mobile Apps</h5>
             <p class="text-white fw-semibold mx-3">Kazuha</p>
-          </div>
-
-      <!--Img Ketiga -->
+          </div> --}}
+      
+      {{-- <!--Img Ketiga -->
       <div class="container text-center" style="margin-top: 10px;">
         <div class="row">
 
@@ -108,7 +121,7 @@
 
         </div>
         
-      </div>
+      </div> --}}
         </div>
         </div>
 

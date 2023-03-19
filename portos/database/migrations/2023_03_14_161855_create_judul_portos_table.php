@@ -19,8 +19,9 @@ return new class extends Migration
         $table->enum('juruan', ['Produksi Grafika', 'Desain Grafis', 'Animasi', 'Desain Komunikasi Visual', 'Rekayasa Perangkat Lunak']);
         $table->enum('kelas', ['10', '11', '12']);
         $table->enum('kategori', ['Animation', 'Branding', 'Illustration','Photography', 'Mobile', 'Website']);
-        $table->text('images')->nullable()->change();
+        // $table->text('images')->nullable()->change();
         $table->string('link');
+        $table->string('status')->default('pending');
         $table->timestamps();
     });
     

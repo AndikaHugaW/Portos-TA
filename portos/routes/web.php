@@ -39,7 +39,9 @@ Route::get('/home', function () {
 });
 
 Route::get('/explore', function () {
-return view('explore');
+    $data= JudulPortos::with('image');
+    $users = Auth::user();
+return view('explore', ['data'=> $data->get(), 'users' =>  $users]);
     });
 
 // Route::get('/profile', function () {

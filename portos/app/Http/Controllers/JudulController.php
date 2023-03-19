@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\JudulPortos;
+use App\Models\portos_image;
 
 class JudulController extends Controller
 {
@@ -41,28 +42,33 @@ class JudulController extends Controller
             'images.*' => 'required|image|mimes:jpeg,png,jpg,gif,svg',
             'link' => 'required|string|url|max:255',
         ]);
-
-        $judulPorto = new JudulPortos([
+        // dd($request->all());
+        $judulPorto = JudulPortos::create([
             'judul' => $validatedData['judul'],
             'juruan' => $validatedData['juruan'],
             'kelas' => $validatedData['kelas'],
             'kategori' => $validatedData['kategori'],
             'link' => $validatedData['link'],
+            // 'status' => 'pending'
         ]);
 
-        $images = [];
+        // $images = [];
 
     if ($request->hasFile('images')) {
         foreach ($request->file('images') as $image) {
             $imageName = time() . '_' . $image->getClientOriginalName();
             $image->move(public_path('images'), $imageName);
-            $images[] = $imageName;
+            // $images[] = $imageName;
+            portos_image::create([
+                'judul_portos_id' => $judulPorto->id,
+                'images' => $imageName       
+            ]);
         }
     }
 
-    $imagesString = json_encode($images); // convert array to string
-    $judulPorto->images = $imagesString; // assign string to the model property
-    $judulPorto->save();
+    // $imagesString = json_encode($images); // convert array to string
+    // $judulPorto->images = $imagesString; // assign string to the model property
+    // $judulPorto->save();
 
         return redirect()->route('profile')
             ->with('success', 'Judul portofolio berhasil ditambahkan');

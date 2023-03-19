@@ -16,7 +16,7 @@
     <!-- Font -->
     <style>
         .button-navbar:hover {
-            color: blue;
+          color: #FFBE55;
             /* background-color: black */
         }
         /* .button-navbar::after {
