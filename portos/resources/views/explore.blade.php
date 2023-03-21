@@ -50,9 +50,15 @@
 
     </div>
 
+
       <!--Img Kedua -->
 
       <div class="container text-center" style="margin-top: 50px;">
+
+      <!-- Card Portofolio -->
+
+      <div class="container text-center" style="margin-top: 100px;">
+
         <div class="row">
 
           <section class="container">
@@ -69,6 +75,10 @@
                   <div class="row">
                       <img class="rounded-circle" src="/profile-3.jpg" style="width: 60px;" alt=""><p class="fw-semibold" style=" font-size: 14px; font-family: poppins; margin-top: -25px; margin-left: 10px; text-decoration: none; color: black;">{{$users->name}}</p>
                   </div>
+                <img src="{{asset('images/' .  $porto->image[0]->images)}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="title fw-semibold card-text text-start" style="width: 400px; text-decoration: none; color: black;">{{$porto->judul}}</p>
+                  <img class="rounded-circle" src="/profile-3.jpg" style="width: 30px; margin-left: -180px;" alt=""><p class="fw-regular text-start" style=" font-size: 14px; width: 300px; font-family: poppins; margin-top: -25px; margin-left: 40px; color: black;">{{$users->name}}</p>
                 </div>
               </div>
             </a>
