@@ -16,7 +16,7 @@
     <title>PORTOS</title>
   </head>
   <body>
-    
+
     <x-navbar/>
       <!-- Background Edit Profile-->
       <div class="d-flex " style="margin-top: 55px; margin-left: 150px;">
@@ -24,32 +24,27 @@
           <img src="/background-edit-profile.jpg" alt="" style="width: 1240px; height: 365px; border-radius: 60px 0 0 0;">
         </div>
 
-        
+
         <div class="start" style="margin-left: -1200px; margin-top: 300px;">
             <img class="rounded-circle" src="/profile-3.jpg" alt="" style="width: 140px; height: 140px;">
         </div>
-      
+
 
         <div class="" style="margin-top: 380px; margin-left: 30px;">
             <h4 class="fw-bold" style="font-family: poppins; font-size: 24px;">Edit Profil</h4>
             <p class="fw-normal" style="font-family: poppins; font-size: 12px; margin-top: -5px;">Lengkapi Foto dan Data Diri Anda</p>
         </div>
-        
+
         <form action="/update/{{$user->id}}" method="POST" enctype="multipart/form-data">
           @csrf
           @method('POST')
-        <!-- Button Save dan Cancel -->
-        <div class="align-content-end" style="margin-left: 640px; margin-top: 380px;">
+        <!-- Button Save -->
+        <div class="align-content-end" style="margin-left: 740px; margin-top: 380px;">
           <button type="button p-2 ps-2 pe-2" class="btn rounded fw-bold pe-auto" style="margin-left: 10px; font-family: poppins; background-color: #FFBE55; color: #fff; font-size: 14px;">
             <span>
               Simpan
             </span>
           </button>
-            <button type="button p-2" class="btn rounded border fw-bold pe-auto" style="margin-left: 10px; font-family: poppins; background-color: #FFf; font-size: 14px;">
-              <span>
-                Cancel
-              </span>
-            </button>
         </div>
 
       </div>
@@ -87,7 +82,7 @@
         </div>
         <div class="col-auto" style="margin-left: 105px;">
           <input type="text" class="form-control" type="text" name="twitter" value="{{ $user->twitter }}" style="width: 800px; height: 40px;">
-          
+
         </div>
       </div>
 
@@ -103,7 +98,7 @@
           @enderror
         </div>
       </div>
-      
+
       <!-- Facebook-->
       <div class="d-flex  justify-content-center" style="margin-top: 50px;">
         <div class="col-auto" style="margin-left: -5px;">
@@ -122,7 +117,7 @@
         <div class="col-auto" style="margin-left: -5px;">
           <label for="Bio" class="form-label"  style="font-family: poppins; font-size: 20px;">Bio</label>
         </div>
-        <div class="col-auto" style="margin-left: 105px;"> 
+        <div class="col-auto" style="margin-left: 105px;">
           <input class="form-control" type="text" name="bio" value="{{ $user->bio }}" id="exampleFormControlTextarea1" rows="3" style="margin-left: -40px; width: 800px;"></input>
           @error('bio')
           <div class="alert alert-danger">{{ $message }}</div>
@@ -130,7 +125,7 @@
         </div>
       </div>
       </div>
-      
+
 
     </form>
 

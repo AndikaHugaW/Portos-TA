@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\SessionController;
+use App\Http\Controllers\adminPortoController;
+use App\Http\Controllers\backController;
 use App\Models\JudulPortos;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -19,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 Route::group(["prefix" => "/sesi"],function () {
     Route::get('/', [SessionController::class, 'masuk']);
     Route::post('/login', [SessionController::class, 'login']);
-    
+
     Route::get('/register', [SessionController::class, 'register']);
     Route::post('/create', [SessionController::class, 'create']);
 });
@@ -39,10 +41,14 @@ Route::get('/home', function () {
 });
 
 Route::get('/explore', function () {
-    $data= JudulPortos::with('image');
+    $data= JudulPortos::with('image')->where('accept', 1);
+    // echo($data);
+    // dd($data);
     $users = Auth::user();
-return view('explore', ['data'=> $data->get(), 'users' =>  $users]);
-    });
+    $punten =  $data->get();
+    // dd($punten);
+    return view('explore', ['data'=> $data->get(), 'users' =>  $users]);
+});
 
 // Route::get('/profile', function () {
 //     return view('profile');
@@ -57,11 +63,15 @@ Route::get('/editprofile', function () {
 Route::get('/profile/edit', 'App\Http\Controllers\SessionController@edit');
 Route::post('/update/{id}', 'App\Http\Controllers\SessionController@update')->name('update');
 
-Route::post('/judul_portos', 'App\Http\Controllers\JudulController@store')->name('judul_portos.store');
-
+Route::group(['middleware' => 'auth'], function () {
+    Route::post('/judul_portos', 'App\Http\Controllers\JudulController@store')->name('judul_portos.store');
+});
 
 Route::get('/posting', function () {
     return view('/posting');
+});
+Route::get('/test', function () {
+    return view('/tester');
 });
 
 // Route::put('/profile/update', 'App\Http\Controllers\ProfileController@update')
@@ -80,3 +90,8 @@ Route::get('/detailporto/{id}', function ($id) {
 Route::get('/notification', function () {
   return view('notification');
 });
+
+Route::resource('admin',adminPortoController::class);
+
+Route::get('acceptporto/{id}', [adminPortoController::class, 'asep']);
+Route::get('/back', [backController::class, 'back'])->name('back');

@@ -34,92 +34,37 @@
 
       </div>
 
-      <div class="" style="width: 100%; margin-top: 280px; padding-left: 100px; background-color: #FFBE55">
-        <div class="">
-          <div class="row">
-            <div class="row  d-flex align-items-center justify-content-center  mt-2 pt-2">
-              <div class="col" style="margin-left: -50px;">
-                <h4 class="fw-bold text-light" style="font-size: 30px; width: 300px;">Apa itu Portos</h4>
-                <p class="fw-semibold text-light" style="font-size: 16px;">
+      <div class="row" style="width: full; justify-content: space-evenly; margin-top: 300px">
+        <div class="col" style="max-width: 566px; height: 497px; background-color: #FFBE55; padding-top: 70px; border-radius: 20px">
+            <h4 class="fw-bold text-light" style="font-size: 30px; text-align: center">Apa itu Portos</h4>
+                <p class="fw-semibold text-light" style="font-size: 17px; margin-top: 50px; text-align: center">
                   Portos adalah kumpulan portofolio yang dikerjakan oleh murid-murid SMK Raden Umar Said Kudus.
                   Para murid dapat mengupload portofolio-nya di Portos, sehingga para Industri dapat merekrut para murid-murid untuk bekerjasama dengan Industri.
                 </p>
-              </div>
-
-              <div class="col">
-                <img src="/illustration-tengah.svg" style="margin-left: 200px; width: 580px; height: 250px;" alt="apa-itu-portos">
-              </div>
-
-              <div class="1" style="margin-top: 30px; margin-left: -50px;">
-                <h2 class="fw-bold text-light">Cara mengupload Portofolio</h2>
-              </div>
-
-              <div class="container">
-                <div class="row row-cols-2" style="margin-left: -58px;">
-
+        </div>
+        <div class="col" style="max-width: 566px; height: 497px; background-color: #FFBE55;  padding-top: 70px; border-radius: 20px; padding-left: 20px">
+            <h2 class="fw-bold text-light" style="text-align: center">Cara mengupload Portofolio</h2>
                   <div class="col">
                     <h4 class="fw-semibold text-white mt-4">01.  Login dan Register terlebih dahulu</h4>
-                    <p class="fw-regular text-white" style="margin-left: 40px;">Isi data diri anda</p>
+                    <p class="fw-regular text-white" >Isi data diri anda</p>
                   </div>
 
                   <div class="col">
                     <h4 class="fw-semibold text-white mt-4">03.  Klik upload</h4>
-                    <p class="fw-regular text-white" style="margin-left: 40px;">Tekan tombol upload</p>
+                    <p class="fw-regular text-white" >Tekan tombol upload</p>
                   </div>
 
                   <div class="col">
                     <h4 class="fw-semibold text-white mt-4">02.  Isi data portofolio kamu</h4>
-                    <p class="fw-regular text-white" style="margin-left: 40px;">Isi file judul dan gambar</p>
+                    <p class="fw-regular text-white" >Isi file judul dan gambar</p>
                   </div>
 
                   <div class="col">
                     <h4 class="fw-semibold text-white mt-4">04.  Tunggu Verifikasi</h3>
-                    <p class="fw-regular text-white" style="margin-left: 40px;">Cek akun secara berkala untuk mengetahui sudah di verifikasi oleh admin</p>
+                    <p class="fw-regular text-white" style="width: 300px">Cek akun secara berkala untuk mengetahui sudah di verifikasi oleh admin</p>
                   </div>
-
-                </div>
-
-              </div>
-
-                <div class="container mt-5" style="">
-                  <div class="row" style="">
-                    <h3 class="col d-flex justify-content-center fw-semibold text-white mt-4" style="font-family: poppins;">Portofolio Siswa</h3>
-                    <h6 class="col text-white mt-4 fw-semibold" onclick="location.href='http://127.0.0.1:8000/explore'" style="font-family: poppins; margin-left: 920px; margin-top: 8px; cursor:pointer">Lihat semua</h6>
-                  </div>
-                </div>
-
-                <div class="container mt-3" style="margin-left: -20px;">
-                  <div class="row">
-
-                    <div class="col-md">
-                      <img src="/img-home-1.svg" alt="gambar-1" style="width: 400px; height: 400px;">
-                      <h5 class="fw-bold text-white mx-3">Restaurant - Mobile Apps</h5>
-                      <p class="text-white fw-semibold mx-3">Kazuha</p>
-                    </div>
-
-                    <div class="col-md">
-                      <img src="/img-home-2.svg" alt="gambar-2" style="width: 400px; height: 400px;">
-                      <h5 class="fw-bold text-white mx-3">Car Shop - Websites</h5>
-                      <p class="text-white fw-semibold mx-3">Lee Nadine</p>
-                    </div>
-
-                    <div class="col-md">
-                      <img src="/img-home-3.svg" alt="gambar-3" style="width: 400px; height: 400px;">
-                      <h5 class="fw-bold text-white mx-3">Neymar World Cup 2022 - 3D Illustrations</h5>
-                      <p class="text-white fw-semibold mx-3">Andika Huga W.</p>
-                    </div>
-
-                  </div>
-
-                </div>
-
-            </div>
-
-          </div>
-
         </div>
-
-      </div>
+    </div>
 
   <div class="" style="">
     <h2 class="d-flex justify-content-center fw-bold" style="font-family: poppins; margin-left: -750px; margin-top: 100px;">Jurusan Yang Ada Di SMK RUS</h2>

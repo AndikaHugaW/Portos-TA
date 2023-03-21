@@ -1,4 +1,3 @@
-{{-- @dd($judul_portos) --}}
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,14 +17,14 @@
 
 
     <!-- Card Profile -->
- 
-    <section class="card rounded-4" style="width: 307px; height: 512px; margin-left: 60px; margin-top: -150px;">
-      <div class="d-flex justify-content-center" style="margin-top: 50px;">
-        <img class="rounded-circle" src="/profile-3.jpg" style="width: 80px;" alt="">
-      </div>
 
-      
-    
+    <section class="card rounded-4" style="width: 307px; height: 350px; margin-left: 60px; margin-top: -150px;">
+      {{-- <div class="d-flex justify-content-center" style="margin-top: 50px;">
+        <img class="rounded-circle" src="/profile-3.jpg" style="width: 80px;" alt="">
+      </div> --}}
+
+
+
       <div class="d-flex row justify-content-center">
         <h5 class="text-center mt-3" style="font-family: poppins;">{{$users->name}}</h5>
         <span class="text-center fw-normal p-1" style="font-size: 10px; font-family: poppins;"><img src="/icon-location.svg" alt="">{{$users->email}}</span>
@@ -48,20 +47,20 @@
             </div>
 
           </div>
-          
+
           <hr class="d-flex justify-content-center mt-3" style="width: 50%;">
 
           <div class="d-flex justify-content-center">
             <p class="fw-semibold" style="font-family: poppins; font-size: 12px;">Member since Nov 15, 2022</p>
           </div>
 
-        
+
 
       </div>
-      
+
 
     </section>
-   
+
 
     <section class="container">
       <div class="row row-cols-auto" style="margin-left: 355px; margin-top: -340px;">
@@ -76,7 +75,7 @@
               </span>
             </button>
           </div>
-        
+
 
         </div>
 
@@ -86,23 +85,27 @@
 
     <!-- Card Project -->
     <section class="container">
-      <div class="row row-cols-4 p-5" style="margin-left: 305px; margin-top: -30px;">
+      <div class="row row-cols-4 mt-5" style="margin-left: 355px; margin-top: -30px">
         @foreach($judul_portos as $porto)
         <a href="/detailporto/{{$porto->id}}" style="text-decoration: none; margin-right: 3em; margin-top: 2em">
           <div class="card col-1 " style="width: 14rem; ">
-          <img src="{{asset('images/' .  $porto->image[0]->images)}}" class="card-img-top" alt="...">
+          <img src="{{asset('images/' . $porto->image[0]->images)}}" style="max-height: 200px; min-height: 200px" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="title card-text" style="margin-left: -10px; text-decoration: none; color: black;">{{$porto->judul}}</p>
-            <img class="rounded-circle" src="/profile-3.jpg" style="width: 30px; margin-left: -10px;" alt=""><p class="fw-semibold" style=" font-size: 14px; font-family: poppins; margin-top: -25px; margin-left: 30px; text-decoration: none; color: black;">{{$users->name}}</p>
+            <p class="title card-text" style="text-decoration: none; color: black; text-align: left">{{$porto->judul}}</p>
+            <p class="title card-text" style="text-decoration: none; color: black; text-align: left">{{$porto->juruan}}</p>
+            <img class="rounded-circle" src="/profile-3.jpg" style="width: 30px;" alt=""><p class="fw-semibold" style=" font-size: 14px; font-family: poppins; margin-top: -25px; margin-left: 40px; text-decoration: none; color: black;">{{$users->name}}</p>
           </div>
         </div>
       </a>
       @endforeach
     </div>
-  </section> 
-    
- 
-  <x-footer/>
+  </section>
+
+
+
+<div style="margin-top: 50px">
+    <x-footer/>
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>

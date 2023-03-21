@@ -15,11 +15,11 @@ class SessionController extends Controller
         return view('sesi/masuk');
     }
     public function login(Request $request) {
-        
+
         Session::flash('email',$request->email);
         $request->validate([
             'email' => 'required',
-            'password' => 'required' 
+            'password' => 'required'
         ],[
             'email.required' => 'Email wajib diisi',
             'password.required' => 'Password wajib diisi'
@@ -32,9 +32,9 @@ class SessionController extends Controller
 
         if(Auth::attempt($infologin)){
             return redirect('home')->with('Berhasil login');
-            
+
         }else
-            
+
             return redirect('sesi')->withErrors('Username dan password salah');
     }
 
@@ -43,12 +43,14 @@ class SessionController extends Controller
         return view('sesi/register');
     }
 
-    public function index()
+    public function index(Request $request)
     {
     // $users = User::find($id);
     // return view('profile', ['users' => $users])
         $users = Auth::user();
-        $judul_portos = JudulPortos::with('image');
+        // dd($users);
+        $judul_portos = JudulPortos::where('user_id' , $users->id)->with('image')->where('accept', 1);
+        // dd($judul_portos->get());
         return view('profile', ['users' => $users,'judul_portos'=>$judul_portos->get()]);
     }
 
@@ -57,8 +59,8 @@ class SessionController extends Controller
     $user = Auth::user();
     return view('update', compact('user'));
     }
-    
-    
+
+
     public function update(Request $request, $id)
     {
         $this->validate($request, [
@@ -68,7 +70,7 @@ class SessionController extends Controller
             'name' => 'Masukkan nama anda',
             'email' => 'Masukkan email anda',
         ]);
-    
+
         $user = User::findOrFail($id);
         $user->name = $request->name;
         $user->email = $request->email;
@@ -79,29 +81,29 @@ class SessionController extends Controller
             $image->move(public_path('profile_image'), $filename);
             $user->profile_image = $filename;
         }
-    
+
         if ($request->has('twitter')) {
             $user->twitter = $request->twitter;
         }
-    
+
         if ($request->has('instagram')) {
             $user->instagram = $request->instagram;
         }
-    
+
         if ($request->has('facebook')) {
             $user->facebook = $request->facebook;
         }
-    
+
         if ($request->has('bio')) {
             $user->bio = $request->bio;
         }
-    
+
         $user->save();
-    
+
         return redirect()->back()->with('success', 'Profile updated successfully.');
     }
-    
-    
+
+
 
 
 
@@ -112,7 +114,7 @@ class SessionController extends Controller
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:6' 
+            'password' => 'required|min:6'
         ],[
             'name.required' => 'Nama wajib diisi',
             'email.required' => 'Email wajib diisi',
@@ -136,10 +138,17 @@ class SessionController extends Controller
 
         if(Auth::attempt($infologin)){
             return redirect('home')->with('Berhasil login');
-            
+
         }else{
             return redirect('sesi')-> withErrors('Username dan password yang dimasukan tidak valid');
         }
     ;}
+    public function asep ($id)
+    {
+        $data = JudulPortos::orderBy('user_id' , 'desc')->with('user')->where('accept', 1)->paginate(4);
+
+        return view('admin.master')->with('data' , $data);
+
+    }
 
 }

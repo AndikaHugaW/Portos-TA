@@ -15,11 +15,24 @@
 
     <title>PORTOS</title>
   </head>
-  <body style="background-color: #F6F7F9;">
+  <body class="w-full" style="background-color: #F6F7F9;">
+    {{-- @if ($errors->any())
+    <div class="mt-2">
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $item)
+                    <li>{{ $item }}</li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
+@endif --}}
 
     <!-- Navbar -->
-   <x-navbar/>
-      
+    <div class="w-full">
+        <x-navbar/>
+    </div>
+
       <section >
         @if(isset($message))
         <div class="alert alert-success">{{ $message }}</div>
@@ -31,7 +44,7 @@
 
     <form method="POST" action="{{ route('judul_portos.store') }}" enctype="multipart/form-data">
       @csrf
-    
+
         <!-- Judul Portofolio -->
         <section>
         <div class="row row-cols-3 d-flex text-center">
@@ -44,8 +57,8 @@
                     <div class="container" style="margin-left: -20px;">
                       <div class="row row-cols-2">
 
-                          
-                        
+
+
                           <!-- Form Judul -->
                         <div class="col">
                           <div class="mb-3">
@@ -114,8 +127,8 @@
 
                     <div class="container">
 
-                      <!-- Import photo 1 --> 
-                     
+                      <!-- Import photo 1 -->
+
                       <div class="row row-cols-2" style="margin-left: -32px;">
                         <div class="col p-2">
                           <div class="mb-3">
@@ -123,7 +136,7 @@
                             <input id="images" type="file" class="form-control-file @error('images') is-invalid @enderror" name="images[]" multiple required>
                           </div>
                         </div>
-                        
+
                         {{-- <!-- Import photo 2 -->
                         <div class="col p-2">
                           <div class="mb-3">
@@ -152,13 +165,13 @@
                       </div>
 
                     </div>
-                    
+
 
                 </div>
 
             </div>
 
-            
+
             <!-- Link Portofolio -->
             <section class="card col rounded" style="margin-left: 30px; width: 790px; height: 250px; margin-top: -250px;">
               <div class="card-body" style="">
@@ -181,18 +194,19 @@
             </section>
           </form>
 
-            
+
 
 
             </div>
           </div>
-        
-    
+
+
       </section>
-
+<div class="w-full">
     <x-footer/>
+</div>
 
-   
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>

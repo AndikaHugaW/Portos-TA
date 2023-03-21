@@ -8,7 +8,7 @@
 
 @include('admin.footer')
 
-
+@include('modal.view')
 
 
 
