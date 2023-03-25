@@ -39,15 +39,6 @@
       <h1 class="fw-bold" style="color:#FFBE55;">Portofolio Website</h1>
       <p class="fw-semibold" style="color: #ADADAD;">1000 inspiring portofolio website works,Designs,Illustrations,and Animations</p>
 
-      {{-- <div class="d-flex justify-content-center row-cols-auto" style="font-size: 18px;  margin-top: 50px; color: #ADADAD;">
-        <div class="col  fw-semibold" style="color: black">Animation</div>
-        <div class="col mx-3 fw-semibold">Branding</div>
-        <div class="col mx-3 fw-semibold">Illustration</div>
-        <div class="col mx-3 fw-semibold">Photography</div>
-        <div class="col mx-3 fw-semibold">Mobile</div>
-        <div class="col mx-3 fw-semibold">Website</div>
-      </div> --}}
-
     </div>
 
 
@@ -58,27 +49,20 @@
       <!-- Card Portofolio -->
 
       <div class="container text-center" style="margin-top: 100px;">
-
         <div class="row">
 
           <section class="container">
-            <div class="row row-cols-5 p-3" style="margin-left: 100px; margin-top: -30px;">
-
-
-                @foreach($data as $porto)
-                <a href="/detailporto/{{$porto->id}}" style="text-decoration: none; margin-right: 3em; margin-top: 2em;">
+            <div class="row row-cols-4 p-3" style="margin-left: 105px; margin-top: -30px;">
+              @foreach($data as $porto)
+              <a href="/detailporto/{{$porto->id}}" style="text-decoration: none; margin-right: 3em; margin-top: 2em">
                 <div class="card col-1 " style="width: 14rem; ">
-                <img src="{{asset('images/' .  $porto->image[0]->images)}}" style="max-height: 200px; min-height: 200px" class="card-img-top img-fluid img-thumbnail" alt="...">
-                <div class="card-body col" style="align-self: flex-start">
-                  <p class="title card-text" style="text-decoration: none; color: black; text-align: left">{{$porto->judul}}</p>
-                  <p class="title card-text" style="text-decoration: none; color: black; text-align: left">{{$porto->juruan}}</p>
-                  <div class="row">
-                      <img class="rounded-circle" src="/profile-3.jpg" style="width: 60px;" alt=""><p class="fw-semibold" style=" font-size: 14px; font-family: poppins; margin-top: -25px; margin-left: 10px; text-decoration: none; color: black;">{{$users->name}}</p>
-                  </div>
-                <img src="{{asset('images/' .  $porto->image[0]->images)}}" class="card-img-top" alt="...">
+                <img src="{{asset('images/' .  $porto->image[0]->images)}}" style="max-height: 200px; min-height: 200px" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="title fw-semibold card-text text-start" style="width: 400px; text-decoration: none; color: black;">{{$porto->judul}}</p>
-                  <img class="rounded-circle" src="/profile-3.jpg" style="width: 30px; margin-left: -180px;" alt=""><p class="fw-regular text-start" style=" font-size: 14px; width: 300px; font-family: poppins; margin-top: -25px; margin-left: 40px; color: black;">{{$users->name}}</p>
+                  <p class="title fw-semibold card-text text-start" style="width: 400px; text-decoration: none; color: black;">{{$porto->juruan}}</p>
+                  <div class="row"></div>
+                  {{-- <img class="rounded-circle" src="/profile-3.jpg" style="width: 30px;" alt=""> --}}
+                  <p class="fw-semibold text-start" style=" font-size: 14px; width: 300px; font-family: poppins; color: black;">{{$porto->user->name}}</p>
                 </div>
               </div>
             </a>
@@ -139,6 +123,7 @@
       </div> --}}
         </div>
         </div>
+      </div>
 
     <x-footer/>
 

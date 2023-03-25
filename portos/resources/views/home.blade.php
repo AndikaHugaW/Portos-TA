@@ -36,30 +36,30 @@
 
       <div class="row" style="width: full; justify-content: space-evenly; margin-top: 300px">
         <div class="col" style="max-width: 566px; height: 497px; background-color: #FFBE55; padding-top: 70px; border-radius: 20px">
-            <h4 class="fw-bold text-light" style="font-size: 30px; text-align: center">Apa itu Portos</h4>
-                <p class="fw-semibold text-light" style="font-size: 17px; margin-top: 50px; text-align: center">
+            <p class="fw-bold text-light fs-2" style="font-size: 30px; text-align: center">Apa itu Portos</p>
+                <p class="fw-semibold text-light fs-4" style="margin-top: 30px; text-align: start">
                   Portos adalah kumpulan portofolio yang dikerjakan oleh murid-murid SMK Raden Umar Said Kudus.
                   Para murid dapat mengupload portofolio-nya di Portos, sehingga para Industri dapat merekrut para murid-murid untuk bekerjasama dengan Industri.
                 </p>
         </div>
         <div class="col" style="max-width: 566px; height: 497px; background-color: #FFBE55;  padding-top: 70px; border-radius: 20px; padding-left: 20px">
-            <h2 class="fw-bold text-light" style="text-align: center">Cara mengupload Portofolio</h2>
-                  <div class="col">
+            <p class="fw-bold text-light fs-2" style="text-align: center">Cara mengupload Portofolio</p>
+                  <div class="col" style="padding-left: 10px">
                     <h4 class="fw-semibold text-white mt-4">01.  Login dan Register terlebih dahulu</h4>
                     <p class="fw-regular text-white" >Isi data diri anda</p>
                   </div>
 
-                  <div class="col">
-                    <h4 class="fw-semibold text-white mt-4">03.  Klik upload</h4>
-                    <p class="fw-regular text-white" >Tekan tombol upload</p>
-                  </div>
-
-                  <div class="col">
+                  <div class="col" style="padding-left: 10px">
                     <h4 class="fw-semibold text-white mt-4">02.  Isi data portofolio kamu</h4>
                     <p class="fw-regular text-white" >Isi file judul dan gambar</p>
-                  </div>
+                </div>
 
-                  <div class="col">
+                <div class="col" style="padding-left: 10px">
+                  <h4 class="fw-semibold text-white mt-4">03.  Klik upload</h4>
+                  <p class="fw-regular text-white" >Tekan tombol upload</p>
+                </div>
+
+                  <div class="col" style="padding-left: 10px">
                     <h4 class="fw-semibold text-white mt-4">04.  Tunggu Verifikasi</h3>
                     <p class="fw-regular text-white" style="width: 300px">Cek akun secara berkala untuk mengetahui sudah di verifikasi oleh admin</p>
                   </div>

@@ -41,7 +41,9 @@ Route::get('/home', function () {
 });
 
 Route::get('/explore', function () {
-    $data= JudulPortos::with('image')->where('accept', 1);
+    // JudulPortos::orderBy('user_id' , 'desc')->with('user','image')
+    // $user = User::where('id' , name);
+    $data= JudulPortos::orderBy('user_id' , 'desc')->with('user' , 'image')->where('accept', 1);
     // echo($data);
     // dd($data);
     $users = Auth::user();
