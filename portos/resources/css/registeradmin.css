@@ -1,0 +1,69 @@
+* {
+    font-family: "poppins", sans-serif;
+}
+
+.login {
+    height: 100vh;
+}
+
+.header h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #000000;
+}
+
+.header p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+
+    color: #737373;
+}
+
+.register-form label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+
+    margin-top: 20px;
+}
+
+.register-form input {
+    background: #ffff;
+    border: 1px solid #bcbcbc;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.register-form a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #737373;
+}
+
+.register-form .signin {
+    width: 100%;
+    height: 42px;
+
+    background: #000000;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.register-form .signin-google {
+    width: 100%;
+    height: 42px;
+    background: #fff;
+    border: 1px solid #bcbcbc;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
